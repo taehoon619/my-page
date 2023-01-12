@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from './component/Header/Header';
+import Main from './component/Main/Main';
+import About from './component/About/About';
+import Skills from './component/Skills/Skills';
+import Project from './component/Project/Project';
+import Contact from './component/Contact/Contact';
+import useMoveScroll from './Hooks/useMoveScroll';
 
 function App() {
+  const goodsTabs = {
+    0: useMoveScroll('Main'),
+    1: useMoveScroll('About'),
+    2: useMoveScroll('Skills'),
+    3: useMoveScroll('Project'),
+    4: useMoveScroll('Contact'),
+    length: 5,
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header goodsTabs={goodsTabs} />
+      <Main elementRef={goodsTabs[0].element} />
+      <About elementRef={goodsTabs[1].element} />
+      <Skills elementRef={goodsTabs[2].element} />
+      <Project elementRef={goodsTabs[3].element} />
+      <Contact elementRef={goodsTabs[4].element} />
     </div>
   );
 }
