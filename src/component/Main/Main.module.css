@@ -5,7 +5,7 @@
   overflow: auto;
 }
 
-.mainText {
+.text {
   width: 100%;
   height: 100%;
   display: flex;
@@ -13,4 +13,15 @@
   align-items: center;
   font-size: 9rem;
   font-weight: bold;
+}
+
+@media (max-width: 996px) {
+  .text {
+    font-size: 6rem;
+  }
+}
+@media (max-width: 389px) {
+  .text {
+    font-size: 2rem;
+  }
 }

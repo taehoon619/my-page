@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import styles from './Header.module.css';
+import { useMediaQuery } from 'react-responsive';
 
 export default function Header({ goodsTabs }) {
   const [scrollTop, setScrollTop] = useState(false);
+  const isDesktop = useMediaQuery({ minDeviceWidth: 560 });
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
@@ -30,7 +32,7 @@ export default function Header({ goodsTabs }) {
   return (
     <>
       <ul className={styles.container}>
-        {Array.from(goodsTabs).map((tab, index) => {
+        {isDesktop ? Array.from(goodsTabs).map((tab, index) => {
           // console.log(tab);
           return (
             <li
@@ -41,7 +43,7 @@ export default function Header({ goodsTabs }) {
               {tab.name}
             </li>
           );
-        })}
+        }): <div>헬로우</div>}
       </ul>
       <div
         className={`${styles.upBtn} ${scrollTop && styles.activeUpbtn}`}

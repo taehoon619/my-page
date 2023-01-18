@@ -24,14 +24,20 @@ export default function Skills({ elementRef }) {
             생태계가 넓고, 다양한 라이브러리를 사용할 수 있는 React를 주로
             사용합니다. <br /> 디자인 패턴 및 최적화에 관심이 많습니다.
           </p>
-          <h2>Javascript</h2>
+          <h2>
+            <MdDoneOutline />
+            <span>Javascript</span>
+          </h2>
           <p>
             ES6+ JavaScript 문법에 능숙하며, ECMAScript의 변화를 꾸준히 살피고
             학습합니다.
             <br />
             컴파일 단계에서 오류를 잡아주는 TypeScript 사용을 지향합니다.
           </p>
-          <h2>Javascript</h2>
+          <h2>
+            <MdDoneOutline />
+            <span>JQuery</span>
+          </h2>
           <p>
             ES6+ JavaScript 문법에 능숙하며, ECMAScript의 변화를 꾸준히 살피고
             학습합니다.

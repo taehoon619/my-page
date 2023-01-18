@@ -5,13 +5,13 @@ import todoList from '../../img/todoList_darkmode.png';
 export default function Project({ elementRef }) {
   return (
     <div ref={elementRef} className={styles.container}>
-      <div className={styles.mainText}>
+      <div className={styles.main_text}>
         <div className={styles.main}>Project</div>
       </div>
       <div className={styles.lead}>
         <div className={styles.item}>
           <div className={styles.sum}>
-            <img src={todoList} alt="sum" width="90%" />
+            <img src={todoList} alt="sum" />
           </div>
           <div className={styles.link}>
             <div className={styles.text}>
@@ -28,11 +28,9 @@ export default function Project({ elementRef }) {
             </div>
           </div>
         </div>
-      </div>
-      <div className={styles.lead}>
         <div className={styles.item}>
           <div className={styles.sum}>
-            <img src={todoList} alt="sum" width="90%" />
+            <img src={todoList} alt="sum" />
           </div>
           <div className={styles.link}>
             <div className={styles.text}>
