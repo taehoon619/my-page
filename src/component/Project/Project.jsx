@@ -11,7 +11,7 @@ export default function Project({ elementRef }) {
       <div className={styles.lead}>
         <div className={styles.item}>
           <div className={styles.sum}>
-            <img src={todoList} alt="sum" width="100%" height="100%" />
+            <img src={todoList} alt="sum" width="90%" />
           </div>
           <div className={styles.link}>
             <div className={styles.text}>
@@ -32,7 +32,7 @@ export default function Project({ elementRef }) {
       <div className={styles.lead}>
         <div className={styles.item}>
           <div className={styles.sum}>
-            <img src={todoList} alt="sum" width="100%" />
+            <img src={todoList} alt="sum" width="90%" />
           </div>
           <div className={styles.link}>
             <div className={styles.text}>
