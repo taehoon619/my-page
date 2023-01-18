@@ -9,7 +9,7 @@ export default function Header({ goodsTabs }) {
     return () => {
       window.removeEventListener('scroll', handleScroll); //clean up
     };
-  }, []);
+  }, []); // 해석 ?
 
   const handleScroll = () => {
     if (window.scrollY >= 50) {
@@ -46,7 +46,9 @@ export default function Header({ goodsTabs }) {
       <div
         className={`${styles.upBtn} ${scrollTop && styles.activeUpbtn}`}
         onClick={handleScrollTop}
-      ></div>
+      >
+        ▲
+      </div>
     </>
   );
 }
