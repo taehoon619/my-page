@@ -1,5 +1,5 @@
 .container {
-  max-width: 100%;
+  width: 100%;
   background-color: var(--color-bg);
   display: flex;
   flex-direction: column;
@@ -11,7 +11,6 @@
 .main {
   font-size: 3rem;
   font-weight: bold;
-  border-bottom: 1px solid;
   /* margin: 3rem; */
   padding-bottom: 0.7rem;
   margin-bottom: 2.3rem;
@@ -32,7 +31,7 @@
 }
 
 .intro_text {
-  font-size: 0.5;
+  font-size: 1.5rem;
   text-align: center;
 }
 
@@ -45,4 +44,71 @@
 p {
   font-size: 1.2rem;
   font-weight: 400;
+}
+
+@media (max-width: 996px) {
+  .container {
+    padding: 3.3rem 3rem;
+  }
+
+  .main {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+  .text {
+    font-size: 7rem;
+  }
+
+  .intro {
+    font-size: 1.7rem;
+    margin-bottom: 1.3rem;
+    font-weight: 800;
+  }
+
+  .intro_text {
+    font-size: 1rem;
+  }
+
+  .title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 1.7rem 0 1.5rem 0;
+  }
+
+  p {
+    font-size: 0.9rem;
+    font-weight: 200;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 3.3rem 0rem;
+  }
+  .main {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  .intro {
+    font-size: 1.2rem;
+  }
+
+  .intro_text {
+    font-size: 0.6rem;
+    font-weight: 300;
+  }
+
+  .title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 1.7rem 0 1.5rem 0;
+  }
+
+  p {
+    font-size: 0.5rem;
+    font-weight: 200;
+  }
 }

@@ -1,53 +1,40 @@
 import React from 'react';
 import styles from './Project.module.css';
-import todoList from '../../img/todoList_darkmode.png';
+import Title from '../Title/Title';
+import { projectData } from '../../data/projectData';
 
 export default function Project({ elementRef }) {
   return (
     <div ref={elementRef} className={styles.container}>
       <div className={styles.main_text}>
-        <div className={styles.main}>Project</div>
+        <Title font="Project" lineColor="black" color="black" />
       </div>
-      <div className={styles.lead}>
-        <div className={styles.item}>
-          <div className={styles.sum}>
-            <img src={todoList} alt="sum" />
-          </div>
-          <div className={styles.link}>
-            <div className={styles.text}>
-              <div>
-                <h3>TodoList</h3>
-                <h5>안녕하세요</h5>
+
+      {projectData.map((data) => {
+        return (
+          <div className={styles.lead}>
+            <div className={styles.item}>
+              <div className={styles.sum}>
+                <img src={data.images} alt="sum" />
               </div>
-              <div></div>
-            </div>
-            <div>
-              <div>#Skills</div>
-              <div>#Git</div>
-              <div>#Netlify</div>
-            </div>
-          </div>
-        </div>
-        <div className={styles.item}>
-          <div className={styles.sum}>
-            <img src={todoList} alt="sum" />
-          </div>
-          <div className={styles.link}>
-            <div className={styles.text}>
-              <div>
-                <h3>TodoList</h3>
-                <h5>안녕하세요</h5>
+              <div className={styles.link}>
+                <div className={styles.text}>
+                  <div>
+                    <h3>{data.title}</h3>
+                    <h5>{data.detail}</h5>
+                  </div>
+                  <div></div>
+                </div>
+                <div className={styles.link_to}>
+                  <div>#Skills</div>
+                  <div>#Skills</div>
+                  <div>#Skills</div>
+                </div>
               </div>
-              <div></div>
-            </div>
-            <div>
-              <div>#Skills</div>
-              <div>#Git</div>
-              <div>#Netlify</div>
             </div>
           </div>
-        </div>
-      </div>
+        );
+      })}
     </div>
   );
 }

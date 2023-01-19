@@ -1,11 +1,12 @@
 import React from 'react';
+import Title from '../Title/Title';
 import styles from './About.module.css';
 
 export default function About({ elementRef }) {
   return (
     <div className={styles.container} ref={elementRef}>
       <div className={styles.main}>
-        <div>About Me</div>
+        <Title font="About Me" lineColor="black" color="black" />
       </div>
       <div className={styles.text_container}>
         <div className={styles.intro}>안녕하세요 개발자 이태훈입니다.</div>
