@@ -15,7 +15,7 @@ export default function Header({ goodsTabs }) {
     const handleResize = debounce(() => {
       if (window.innerWidth < 1000) {
         setIsDesktop(false);
-      } else {
+    } else {
         setIsDesktop(true);
       }
     }, 200);
