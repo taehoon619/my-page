@@ -67,7 +67,7 @@ img {
 .btn {
   font-size: 1rem;
   background-color: black;
-  color: #fff;
+  color: var(--color-white);
   display: table;
   border-radius: 0.25rem;
   padding: 0.5rem 1rem;
