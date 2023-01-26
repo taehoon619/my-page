@@ -20,7 +20,7 @@ export default function Main() {
           return result;
         });
       }
-    }, 300);
+    }, 200);
 
     return () => {
       clearInterval(typingInterval);
