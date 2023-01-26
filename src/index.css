@@ -6,6 +6,12 @@
   --color-accent: #f16e03;
   --color-white: white;
   --color-scrollbar: #aaa7a7;
+  --font-pretendard: 'pretendard';
+}
+
+@font-face {
+  font-family: 'pretendard';
+  src: url(./font/Pretendard-Regular.otf);
 }
 
 body {

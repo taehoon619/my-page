@@ -1,40 +1,28 @@
 .container {
+  font-family: var(--font-pretendard);
   width: 100%;
   background-color: gray;
   padding: 3.3rem;
 }
 
-.main_text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.main {
-  font-size: 3rem;
-  font-weight: bold;
-  border-bottom: 1px solid;
-  padding-bottom: 0.7rem;
-}
-
-.lead {
+.itemWrap {
   max-width: 71.25rem;
-  margin: 3rem auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
 }
 
 .item {
-  height: 30rem;
-  margin-bottom: 4.5rem;
-  display: flex;
-  border-radius: 1.5rem;
   background-color: white;
+  display: flex;
+  border-radius: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 4.5rem;
 }
 
-.sum {
+.thumbnail {
   width: 100%;
   overflow: hidden;
   display: flex;
@@ -42,48 +30,89 @@
   align-items: center;
 }
 
-.sum:hover {
+.thumbnail:hover {
   opacity: 0.5;
 }
 
 img {
   width: 90%;
   height: 90%;
-  border-radius: 1.5rem;
+  border-radius: 0.25rem;
 }
 
-.link {
+.textWrap {
   width: 100%;
   display: flex;
   flex-direction: column;
   margin: 0 2rem;
 }
 .text {
-  width: 100%;
   font-size: 1.5rem;
   border-bottom: 1px solid;
-  padding-bottom: 1rem;
-  margin: 2.5rem 0 3rem 0;
+  padding-bottom: 0.8rem;
+  margin: 2.5rem 0 1rem 0;
 }
 
-h3 {
+.textTitle {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
 
-h5 {
-  font-size: 1.4rem;
+.textDetail {
+  font-size: 1.2rem;
+  font-weight: 400;
+  word-break: keep-all;
+}
+
+.btn {
+  font-size: 1rem;
+  background-color: black;
+  color: #fff;
+  display: table;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  margin: 1rem 1rem 0;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.5;
+}
+
+.projectTextWrap {
+  margin: 0.8rem 0;
+}
+
+.projectText {
+  font-size: 1.2rem;
+  font-weight: 900;
+  display: inline-block;
+  vertical-align: top;
+  width: 8.4rem;
+}
+
+.projectDetail {
+  font-size: 1rem;
+  font-weight: 400;
+  width: calc(100% - 8.4rem);
+  display: inline-block;
+  vertical-align: bottom;
+  word-break: keep-all;
+}
+
+.projectDetail > a {
+  color: #258ddb;
+  cursor: pointer;
+  text-decoration: none;
+  word-break: break-all;
 }
 
 @media (max-width: 996px) {
   .container {
     padding: 3rem 3rem;
   }
-  .main {
-    font-size: 1.3rem;
-  }
 
-  .lead {
+  .itemWrap {
     font-size: 1.2rem;
     margin: 2rem auto;
   }
@@ -98,11 +127,11 @@ h5 {
 
   img {
     width: 90%;
-    height: 90%;
-    border-radius: 1.5rem;
+    height: 80%;
+    border-radius: 0.25rem;
   }
 
-  .link {
+  .textWrap {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -111,18 +140,38 @@ h5 {
 
   .text {
     width: 100%;
-    /* height: 40%; */
     font-size: 2rem;
-    margin: 0 0 2rem 0;
+    margin: 0 0 1rem 0;
   }
 
-  h3 {
+  .textTitle {
     font-size: 1.3rem;
     font-weight: 900;
   }
 
-  h5 {
+  .textDetail {
     font-size: 1rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 0.4rem 0.8rem;
+    margin: 0.8rem 0.8rem 0;
+  }
+
+  .projectTextWrap {
+    margin: 0.5rem 0;
+  }
+
+  .projectText {
+    font-size: 1.2rem;
+    font-weight: 900;
+  }
+
+  .projectDetail {
+    font-size: 0.9rem;
+    font-weight: 400;
+    width: calc(100% - 6rem);
   }
 }
 
@@ -130,42 +179,39 @@ h5 {
   .container {
     padding: 2rem 2rem;
   }
-  .main {
-    font-size: 1.3rem;
-  }
 
-  .lead {
+  .itemWrap {
     font-size: 1.2rem;
     margin: 2rem auto;
   }
 
   .item {
-    width: 80%;
-    height: 100%;
+    width: 77%;
+    /* height: 100%; */
     margin: 0 1rem 1rem 1rem;
     flex-wrap: wrap;
     border-left: 1px solid gray;
   }
 
-  .link {
+  .textWrap {
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin: 2rem;
+    margin: 1rem;
   }
 
   .text {
     width: 100%;
     font-size: 2rem;
-    margin: 0 0 2rem 0;
+    margin: 0 0 1rem 0;
   }
 
-  h3 {
+  .textTitle {
     font-size: 1.3rem;
     font-weight: 900;
   }
 
-  h5 {
+  .textDetail {
     font-size: 0.9rem;
   }
 }
@@ -174,11 +220,8 @@ h5 {
   .container {
     padding: 3rem 1rem;
   }
-  .main {
-    font-size: 1.3rem;
-  }
 
-  .lead {
+  .itemWrap {
     font-size: 1.2rem;
     margin: 2rem auto;
   }
@@ -189,7 +232,7 @@ h5 {
     border-left: 1px solid gray;
   }
 
-  .link {
+  .textWrap {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -204,12 +247,35 @@ h5 {
     margin: 0 0 2rem 0;
   }
 
-  h3 {
+  .textTitle {
     font-size: 1rem;
     font-weight: 900;
   }
 
-  h5 {
+  .textDetail {
+    font-size: 0.8rem;
+  }
+
+  .btn {
     font-size: 0.6rem;
+    padding: 0.4rem 0.8rem;
+    margin: 0.8rem 0.8rem 0;
+  }
+
+  .projectTextWrap {
+    margin: 0.4rem 0;
+  }
+
+  .projectText {
+    font-size: 0.8rem;
+    font-weight: 800;
+    width: 8.4rem;
+  }
+
+  .projectDetail {
+    font-size: 0.8rem;
+    font-weight: 400;
+    width: calc(100% - 8.4rem);
+    vertical-align: top;
   }
 }

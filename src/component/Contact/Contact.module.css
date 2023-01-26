@@ -1,4 +1,5 @@
 .container {
+  font-family: var(--font-pretendard);
   max-width: 100%;
   background-color: var(--color-bg-dark);
   display: flex;

@@ -1,11 +1,9 @@
 .container {
+  font-family: var(--font-pretendard);
   width: 100%;
   background-color: white;
   color: black;
   opacity: 1;
-  /* display: flex;
-  justify-content: space-between;
-  align-items: center; */
   position: fixed;
   left: 0;
   top: 0;
@@ -16,7 +14,6 @@
   max-width: 71.25rem;
   height: 4.5rem;
   padding: 1.25rem 4.5rem;
-  /* background-color: white; */
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -42,7 +39,6 @@
   background-color: transparent;
   text-transform: capitalize;
   border: none;
-  padding: 1.3rem;
   cursor: pointer;
 }
 

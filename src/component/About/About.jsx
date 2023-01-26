@@ -5,12 +5,10 @@ import styles from './About.module.css';
 export default function About({ elementRef }) {
   return (
     <div className={styles.container} ref={elementRef}>
-      <div className={styles.main}>
         <Title font="About Me" lineColor="black" color="black" />
-      </div>
-      <div className={styles.text_container}>
+      <div className={styles.textWrap}>
         <div className={styles.intro}>안녕하세요 개발자 이태훈입니다.</div>
-        <p className={styles.intro_text}>
+        <p className={styles.introText}>
           유저 경험과 디자인에 민감하고 새로운 기술과 트렌드를 익히고 도전하는
           것을 좋아합니다. <br />
           커뮤니케이션의 중요성을 믿고, 어제보다 나은 사람이 되는 것을 목표로
