@@ -1,7 +1,7 @@
 .container {
   font-family: var(--font-pretendard);
   width: 100%;
-  background-color: gray;
+  background-color: #f9c51d;
   padding: 3.3rem;
 }
 
@@ -11,15 +11,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  margin: 0 auto 4.5rem;
+  border-radius: 1rem;
+  box-shadow: 1rem 1rem 1rem 0 rgb(68 68 68 / 20%);
+  -webkit-box-shadow: 1rem 1rem 1rem 0 rgb(68 68 68 / 20%);
+  background-color: white;
+  padding: 2rem 1rem;
 }
 
 .item {
-  background-color: white;
   display: flex;
-  border-radius: 1rem;
-  padding-bottom: 1rem;
-  margin-bottom: 4.5rem;
 }
 
 .thumbnail {
@@ -28,16 +29,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.thumbnail:hover {
-  opacity: 0.5;
+  padding: 2rem;
 }
 
 img {
-  width: 90%;
-  height: 90%;
-  border-radius: 0.25rem;
+  border-radius: 1rem;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .textWrap {
@@ -46,11 +45,12 @@ img {
   flex-direction: column;
   margin: 0 2rem;
 }
+
 .text {
   font-size: 1.5rem;
   border-bottom: 1px solid;
   padding-bottom: 0.8rem;
-  margin: 2.5rem 0 1rem 0;
+  margin: 0 1rem 0 0;
 }
 
 .textTitle {
@@ -71,7 +71,7 @@ img {
   display: table;
   border-radius: 0.25rem;
   padding: 0.5rem 1rem;
-  margin: 1rem 1rem 0;
+  margin: 1rem 1rem 0 0;
   cursor: pointer;
 }
 
@@ -122,12 +122,11 @@ img {
     height: 100%;
     margin: 0 1rem 1rem 1rem;
     /* flex-wrap: wrap; */
-    border-left: 1px solid gray;
   }
 
   img {
-    width: 90%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
     border-radius: 0.25rem;
   }
 
@@ -156,7 +155,7 @@ img {
   .btn {
     font-size: 1rem;
     padding: 0.4rem 0.8rem;
-    margin: 0.8rem 0.8rem 0;
+    margin: 0.8rem 0.8rem 0 0;
   }
 
   .projectTextWrap {
@@ -190,14 +189,17 @@ img {
     /* height: 100%; */
     margin: 0 1rem 1rem 1rem;
     flex-wrap: wrap;
-    border-left: 1px solid gray;
+  }
+
+  .thumbnail {
+    padding: 0;
   }
 
   .textWrap {
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin: 1rem;
+    margin: 1rem 0 0;
   }
 
   .text {
@@ -227,17 +229,15 @@ img {
   }
 
   .item {
-    margin: 0 1rem 1rem 1rem;
+    margin: 0 auto;
     flex-wrap: wrap;
-    border-left: 1px solid gray;
   }
 
   .textWrap {
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin-left: 2rem;
-    margin-bottom: 2rem;
+    margin: 1rem 0 0;
   }
 
   .text {
@@ -259,7 +259,7 @@ img {
   .btn {
     font-size: 0.6rem;
     padding: 0.4rem 0.8rem;
-    margin: 0.8rem 0.8rem 0;
+    margin: 0.8rem 0.8rem 0 0;
   }
 
   .projectTextWrap {

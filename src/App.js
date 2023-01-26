@@ -4,6 +4,7 @@ import About from './component/About/About';
 import Skills from './component/Skills/Skills';
 import Project from './component/Project/Project';
 import Contact from './component/Contact/Contact';
+import Footer from './component/Footer/Footer';
 import useMoveScroll from './Hooks/useMoveScroll';
 
 function App() {
@@ -17,11 +18,12 @@ function App() {
   return (
     <div>
       <Header goodsTabs={goodsTabs} />
-      <Main/>
+      <Main />
       <About elementRef={goodsTabs[0].element} />
       <Skills elementRef={goodsTabs[1].element} />
       <Project elementRef={goodsTabs[2].element} />
       <Contact elementRef={goodsTabs[3].element} />
+      {/* <Footer /> */}
     </div>
   );
 }

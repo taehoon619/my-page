@@ -1,7 +1,7 @@
 .container {
   font-family: var(--font-pretendard);
   width: 100%;
-  background-color: var(--color-bg);
+  background-color: #2d2d2d;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,12 +10,17 @@
 }
 
 .textWrap {
-  padding: 0 9rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   word-break: keep-all;
+}
+
+.titleWrap {
+  color: #fff;
+  padding: 0 6rem;
+  margin: 0 0 3rem;
 }
 
 .intro {
@@ -34,6 +39,15 @@
   font-size: 2rem;
   font-weight: 600;
   margin: 1.7rem 0 1.5rem 0;
+}
+
+.text {
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 4rem;
+  margin: 0 0 3rem;
+  box-shadow: 1rem 1rem 1rem 0 rgb(68 68 68 / 20%);
+  -webkit-box-shadow: 1rem 1rem 1rem 0 rgb(68 68 68 / 20%);
 }
 
 .text > p {

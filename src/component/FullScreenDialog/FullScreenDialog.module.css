@@ -1,0 +1,107 @@
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  z-index: 99999;
+  background-color: #fff;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #222;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.headerTitle {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.closeBtnWrap {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+.closeBtn {
+  font-size: 2rem;
+}
+
+.wrap {
+  width: 100%;
+  padding: 5rem 2.5rem;
+  max-width: 1320px;
+}
+
+.wrap > .title,
+.UrlTitle,
+.detailTitle,
+.functionTitle {
+  display: block;
+  margin-bottom: 1em;
+  font-weight: 700;
+}
+
+.wrap > p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 1.75rem;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #ccc;
+}
+
+.url {
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.functionTitle {
+  font-size: 1.2rem;
+}
+
+.functionList {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+}
+
+.functionList > li {
+  list-style: disc;
+  margin-bottom: 0.5rem;
+}
+
+.detailList {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+}
+
+.detailList > li {
+  list-style: disc;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 1200px) {
+  .wrap {
+    max-width: 1140px;
+  }
+}
+
+@media (max-width: 992px) {
+  .wrap {
+    max-width: 960px;
+  }
+}

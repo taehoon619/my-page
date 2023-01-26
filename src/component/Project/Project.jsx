@@ -1,16 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './Project.module.css';
 import Title from '../Title/Title';
 import { projectData } from '../../data/projectData';
+import FullScreenDialog from '../FullScreenDialog/FullScreenDialog';
 
 export default function Project({ elementRef }) {
+  const [modalOn, setModalOn] = useState(false);
+  const [projectNum, setProjectNum] = useState(0);
+
+  const handleModal = (num) => {
+    if (num) {
+      setProjectNum(num);
+    }
+    setModalOn((prev) => !prev);
+  };
+
   return (
     <div ref={elementRef} className={styles.container}>
-      <Title font="Project" lineColor="black" color="black" />
+      <Title font="Project" lineColor="#000" color="#000" />
 
       {projectData.map((data) => {
         return (
-          <div className={styles.itemWrap}>
+          <div className={styles.itemWrap} key={data.id}>
             <div className={styles.item}>
               <div className={styles.thumbnail}>
                 <img src={data.images} alt="thumbnail" />
@@ -21,7 +32,12 @@ export default function Project({ elementRef }) {
                     <h3 className={styles.textTitle}>{data.title}</h3>
                     <h5 className={styles.textDetail}>{data.detail}</h5>
                   </div>
-                  <div className={styles.btn}>자세히 보기</div>
+                  <button
+                    className={styles.btn}
+                    onClick={() => handleModal(data.id)}
+                  >
+                    자세히 보기
+                  </button>
                 </div>
                 <ul>
                   <li className={styles.projectTextWrap}>
@@ -58,6 +74,13 @@ export default function Project({ elementRef }) {
           </div>
         );
       })}
+      {modalOn && (
+        <FullScreenDialog
+          handleModal={handleModal}
+          project={projectData[projectNum].readme}
+          num={projectNum}
+        />
+      )}
     </div>
   );
 }

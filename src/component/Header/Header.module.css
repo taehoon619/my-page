@@ -30,7 +30,7 @@
 }
 
 .logo:hover {
-  color: red;
+  color: #ed1c24;
 }
 
 .button {
@@ -43,7 +43,7 @@
 }
 
 .button:hover {
-  color: orange;
+  color: #ed1c24;
 }
 
 .upBtn {
@@ -104,6 +104,10 @@
   cursor: pointer;
 }
 
+.menuMobile:hover {
+  color: #ed1c24;
+}
+
 .menuMobile:first-child {
   margin-top: 1rem;
 }
@@ -111,6 +115,11 @@
   margin-bottom: 1rem;
 }
 
+@media (max-width: 1000px) {
+  .wrap {
+    padding: 1.25rem 2rem;
+  }
+}
 @media (max-width: 576px) {
   .container {
     position: fixed;

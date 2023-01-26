@@ -3,7 +3,7 @@ import styles from './Main.module.css';
 import { useState, useEffect } from 'react';
 
 export default function Main() {
-  const [blogTitle, setBlogTitle] = useState('');
+  const [title, setTitle] = useState('');
   const [count, setCount] = useState(0);
   const completionWord = `Developer \n 이태훈입니다`;
 
@@ -12,7 +12,7 @@ export default function Main() {
       if (count >= completionWord.length) {
         clearInterval(typingInterval);
       } else {
-        setBlogTitle((prevTitleValue) => {
+        setTitle((prevTitleValue) => {
           let result = prevTitleValue
             ? prevTitleValue + completionWord[count]
             : completionWord[0];
@@ -27,12 +27,10 @@ export default function Main() {
     };
   });
 
-  // console.log(blogTitle, '2222');
-
   return (
     <div className={styles.container}>
       <div className={styles.text}>
-        <h2>{blogTitle}</h2>
+        <h2>{title}</h2>
       </div>
     </div>
   );

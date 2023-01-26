@@ -9,6 +9,14 @@ export default function Header({ goodsTabs }) {
   const [isDesktop, setIsDesktop] = useState(true);
 
   useEffect(() => {
+    const handleResize = debounce(() => {
+      if (window.innerWidth < 1000) {
+        setIsDesktop(false);
+      } else {
+        setIsDesktop(true);
+      }
+    }, 500);
+
     window.addEventListener('scroll', handleScroll);
     window.addEventListener('resize', handleResize);
     return () => {
@@ -16,14 +24,6 @@ export default function Header({ goodsTabs }) {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
-
-  const handleResize = debounce(() => {
-    if (window.innerWidth < 1000) {
-      setIsDesktop(false);
-    } else {
-      setIsDesktop(true);
-    }
-  }, 500);
 
   const handleHamburger = () => {
     setOpenHamburger((status) => !status);
