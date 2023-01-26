@@ -17,7 +17,7 @@ export default function Contact({ elementRef }) {
                   alt=""
                 />
               </div>
-              <div className={styles.address}>github.com/wook2onandon</div>
+              <div className={styles.address}>github.com/taehoon619</div>
               <div className={styles.textTitle}>
                 <b>소스 코드 저장소</b>입니다.
               </div>
@@ -43,7 +43,7 @@ export default function Contact({ elementRef }) {
                 https://grave-jute-6f6.notion.site/WOOK-s-Portfolio-a465e17624d141378fdc4b8effba7d78
               </div>
               <div className={styles.textTitle}>
-                <b>WOOK's Portfolio 노션</b>입니다.
+                <b>이태훈의 Portfolio 노션</b>입니다.
               </div>
               <ul className={styles.textWrap}>
                 <li className={styles.text}>

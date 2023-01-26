@@ -89,7 +89,12 @@
 
 @media (max-width: 576px) {
   .container {
-    padding: 3.3rem 0rem;
+    padding: 3.3rem 1rem;
+  }
+
+  .titleWrap {
+    padding: 0 3rem;
+    margin: 0 0 1rem;
   }
 
   .intro {
