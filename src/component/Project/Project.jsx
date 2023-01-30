@@ -16,7 +16,7 @@ export default function Project({ elementRef }) {
   };
 
   return (
-    <div ref={elementRef} className={styles.container}>
+    <article ref={elementRef} className={styles.container}>
       <Title font="Project" lineColor="#000" color="#000" />
 
       {projectData.map((data) => {
@@ -39,6 +39,7 @@ export default function Project({ elementRef }) {
                     자세히 보기
                   </button>
                 </div>
+                
                 <ul>
                   <li className={styles.projectTextWrap}>
                     <div className={styles.projectText}>frontend</div>
@@ -62,12 +63,6 @@ export default function Project({ elementRef }) {
                       {data.deployment}
                     </div>
                   </li>
-                  <li className={styles.projectTextWrap}>
-                    <div className={styles.projectText}>deployment</div>
-                    <div className={styles.projectDetail}>
-                      {data.deployment}
-                    </div>
-                  </li>
                 </ul>
               </div>
             </div>
@@ -81,6 +76,6 @@ export default function Project({ elementRef }) {
           num={projectNum}
         />
       )}
-    </div>
+    </article>
   );
 }

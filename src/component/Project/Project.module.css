@@ -43,7 +43,7 @@ img {
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin: 0 2rem;
+  margin: 2rem 2rem 0;
 }
 
 .text {
@@ -127,7 +127,7 @@ img {
   img {
     width: 100%;
     height: 100%;
-    border-radius: 0.25rem;
+    border-radius: 1rem;
   }
 
   .textWrap {
@@ -248,12 +248,14 @@ img {
   }
 
   .textTitle {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 900;
   }
 
   .textDetail {
-    font-size: 0.8rem;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.1rem;
   }
 
   .btn {
@@ -267,13 +269,13 @@ img {
   }
 
   .projectText {
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: 800;
     width: 8.4rem;
   }
 
   .projectDetail {
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: 400;
     width: calc(100% - 8.4rem);
     vertical-align: top;

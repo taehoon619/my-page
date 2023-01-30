@@ -44,12 +44,13 @@
 }
 
 .itemTitle {
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   margin-bottom: 1.2rem;
 }
 
-h2 span {
-  margin-left: 0.2rem;
+
+.itemTitle > span {
+  margin-left: 0.3rem;
 }
 
 p {
@@ -111,7 +112,7 @@ p {
 
   .intro {
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: 800;
   }
 
   .intro_text {
@@ -147,18 +148,23 @@ p {
     padding: 3rem 1rem;
   }
 
+  .wrapper {
+    margin: 0 0 2.2rem;
+  }
+
   .section {
     padding-top: 1rem;
   }
 
   .intro {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-bottom: 0.8rem;
   }
 
   .intro_text {
-    font-size: 0.6rem;
+    font-size: 0.9rem;
     font-weight: 300;
+    line-height: 1.1rem;
   }
 
   .itemWrap {
@@ -173,13 +179,14 @@ p {
     margin-bottom: 0.8rem;
   }
 
-  h2 span {
-    font-size: 1rem;
+  .itemTitle span {
+    font-size: 1.2rem;
     margin-left: 0.2rem;
   }
 
-  p {
-    font-size: 0.5rem;
+  .itemWrap p {
+    font-size: 0.8rem;
     font-weight: 200;
+    line-height: 1.1rem;
   }
 }

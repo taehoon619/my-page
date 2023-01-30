@@ -3,7 +3,7 @@ export const projectData = [
     id: 0,
     title: 'TodoList',
     subTitle: '2023.01 (1人 개인 프로젝트)',
-    detail: 'todolist',
+    detail: '할일을 적어두는 Todo List앱 입니다. 다크모드 기능이 있고 웹페이지에서 나가거나 새로고침 하더라도 유지 될 수 있도록 만들었습니다',
     features:
       '간단한 자기소개, 인적 사항, 기술 스택, GitHub링크, 프로젝트 경험, 업무 경력기술',
     github: 'https://github.com/taehoon619/TodoList.git',
@@ -33,7 +33,7 @@ export const projectData = [
         database: '',
         deployment: 'Netlify',
       },
-      url: 'https://wook-todolist.netlify.app',
+      url: 'https://leetaehoon-todolist.netlify.app/',
     },
   },
   {
@@ -52,11 +52,11 @@ export const projectData = [
     deployment: 'Netlify',
     images: '/images/lth_portfolio.png',
     readme: {
-      title: 'Todo List',
+      title: 'My Portfolio',
       summary:
-        '할일을 적어두는 Todo List앱 입니다. context API를 사용해서 구현한 다크모드 기능이 있고 Todo List입력기능, 완료된 활동과 완료되지 않은 활동을 나누어 볼 수 있도록 제작. 또한 웹페이지에서 나가거나 새로고침 하더라도 유지 될 수 있도록 Local Storage에 저장 되로록 만들었습니다.',
+        '포트폴리오 용도로 제작한 웹사이트입니다. 지금 보고 있는 바로 이 웹사이트에 해당합니다. 순수 React로 개발을 완료하였습니다. 슬라이더는 React-Slick library를 사용하여 arrow버튼과 paging버튼을 커스텀하여 사용하였고 메뉴를 눌렀을때 스크롤을 이동시키기 위해 useMoveScroll이라는 custom hook을 만들어서 구현했습니다.',
       detail: [
-        'Todo List입력',
+        'useMoveScroll',
         'Todo List삭제',
         'Todo List완료설정',
         '다크모드',
@@ -71,7 +71,7 @@ export const projectData = [
         database: '',
         deployment: 'Netlify',
       },
-      url: 'https://wook-todolist.netlify.app',
+      url: 'https://leetaehoon-portfolio.netlify.app/',
     },
   },
   {

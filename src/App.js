@@ -23,7 +23,7 @@ function App() {
       <Skills elementRef={goodsTabs[1].element} />
       <Project elementRef={goodsTabs[2].element} />
       <Contact elementRef={goodsTabs[3].element} />
-      {/* <Footer /> */}
+      <Footer/>
     </div>
   );
 }

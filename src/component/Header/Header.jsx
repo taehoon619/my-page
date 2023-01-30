@@ -53,7 +53,7 @@ export default function Header({ goodsTabs }) {
 
   return (
     <>
-      <div className={styles.container}>
+      <header className={styles.container}>
         <ul className={styles.wrap}>
           <span className={styles.logo} onClick={handleScrollTop}>
             Portfolio
@@ -102,7 +102,7 @@ export default function Header({ goodsTabs }) {
             })}
           </ul>
         )}
-      </div>
+      </header>
       <div
         className={`${styles.upBtn} ${scrollTop && styles.activeUpbtn}`}
         onClick={handleScrollTop}

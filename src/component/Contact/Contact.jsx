@@ -14,10 +14,10 @@ export default function Contact({ elementRef }) {
                 <img
                   className={styles.nameImg}
                   src="/images/github.png"
-                  alt=""
+                  alt="git"
                 />
               </div>
-              <div className={styles.address}>github.com/taehoon619</div>
+              <a href='https://github.com/taehoon619/' className={styles.address}>github.com/taehoon619</a>
               <div className={styles.textTitle}>
                 <b>소스 코드 저장소</b>입니다.
               </div>
@@ -36,7 +36,7 @@ export default function Contact({ elementRef }) {
                 <img
                   className={styles.nameImg}
                   src="/images/notion.png"
-                  alt=""
+                  alt="notion"
                 />
               </div>
               <div className={styles.address}>

@@ -4,7 +4,7 @@ import styles from './About.module.css';
 
 export default function About({ elementRef }) {
   return (
-    <div className={styles.container} ref={elementRef}>
+    <article className={styles.container} ref={elementRef}>
       <Title font="About Me" lineColor="gray" color="white" />
       <div className={styles.textWrap}>
         <div className={styles.titleWrap}>
@@ -34,6 +34,6 @@ export default function About({ elementRef }) {
           </p>
         </div>
       </div>
-    </div>
+    </article>
   );
 }

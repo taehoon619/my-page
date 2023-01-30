@@ -28,10 +28,10 @@ export default function Main() {
   });
 
   return (
-    <div className={styles.container}>
+    <article className={styles.container}>
       <div className={styles.text}>
         <h2>{title}</h2>
       </div>
-    </div>
+    </article>
   );
 }
