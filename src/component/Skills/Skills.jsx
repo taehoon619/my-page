@@ -22,7 +22,7 @@ export default function Skills({ elementRef }) {
           </div>
           <div className={styles.itemWrap}>
             <h2 className={styles.itemTitle}>
-              <span><IoLogoReact /></span>
+              <IoLogoReact />
               <span>React</span>
             </h2>
             <p>

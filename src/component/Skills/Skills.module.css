@@ -79,8 +79,8 @@ p {
   }
 
   .itemWrap {
-    padding-left: 1rem;
-    margin: 0 1rem;
+    padding-left: 2rem;
+    margin: 0;
     flex-wrap: wrap;
     border-left: 1px solid gray;
   }
@@ -106,6 +106,10 @@ p {
     padding: 3rem 2rem;
   }
 
+  .wrapper {
+    margin: 0 0 2.2rem;
+  }
+
   .section {
     padding-top: 1rem;
   }
@@ -121,8 +125,7 @@ p {
   }
 
   .itemWrap {
-    padding-left: 1rem;
-    margin: 0 1rem;
+    padding-left: 2rem;
     flex-wrap: wrap;
     border-left: 1px solid gray;
   }
@@ -157,7 +160,7 @@ p {
   }
 
   .intro {
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     margin-bottom: 0.8rem;
   }
 
@@ -168,8 +171,7 @@ p {
   }
 
   .itemWrap {
-    padding-left: 1rem;
-    margin: 0 1rem;
+    padding-left: 2rem;
     flex-wrap: wrap;
     border-left: 1px solid gray;
   }

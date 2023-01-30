@@ -39,9 +39,9 @@ export default function Contact({ elementRef }) {
                   alt="notion"
                 />
               </div>
-              <div className={styles.address}>
-                https://grave-jute-6f6.notion.site/WOOK-s-Portfolio-a465e17624d141378fdc4b8effba7d78
-              </div>
+              <a href='https://moored-fear-6c4.notion.site/0e78f9fc7c3b47ee8f4315249bcad766' className={styles.address}>
+              https://moored-fear-6c4.notion.site/0e78f9fc7c3b47ee8f4315249bcad766
+              </a>
               <div className={styles.textTitle}>
                 <b>이태훈의 Portfolio 노션</b>입니다.
               </div>
