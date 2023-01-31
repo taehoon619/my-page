@@ -7,12 +7,12 @@ export const projectData = [
     features:
       '간단한 자기소개, 인적 사항, 기술 스택, GitHub링크, 프로젝트 경험, 업무 경력기술',
     github: 'https://github.com/taehoon619/TodoList.git',
-    url: 'https://leetaehoon-todolist.netlify.app/',
+    url: 'https://leeth-todolist.netlify.app/',
     frontend: 'react, module css, react-slick',
     backend: '',
     database: '',
     deployment: 'Netlify',
-    images: '/images/todoList_darkmode.png',
+    images: '/images/leeth_todolist.png',
     readme: {
       title: 'Todo List',
       summary:
@@ -33,7 +33,7 @@ export const projectData = [
         database: '',
         deployment: 'Netlify',
       },
-      url: 'https://leetaehoon-todolist.netlify.app/',
+      url: 'https://leeth-todolist.netlify.app/',
     },
   },
   {
@@ -50,7 +50,7 @@ export const projectData = [
     backend: '',
     database: '',
     deployment: 'Netlify',
-    images: '/images/leetaehoon_portfolio.png',
+    images: '/images/leeth_portfolio.png',
     readme: {
       title: 'My Portfolio',
       summary:
@@ -88,7 +88,7 @@ export const projectData = [
     backend: '',
     database: '',
     deployment: 'Netlify',
-    images: '/images/todoList_darkmode.png',
+    images: '/images/leeth_todolist.png',
     readme: {
       title: 'Todo List',
       summary:
