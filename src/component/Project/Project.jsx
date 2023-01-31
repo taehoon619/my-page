@@ -38,8 +38,7 @@ export default function Project({ elementRef }) {
                   >
                     자세히 보기
                   </button>
-                </div>
-                
+                </div> 
                 <ul>
                   <li className={styles.projectTextWrap}>
                     <div className={styles.projectText}>frontend</div>
@@ -54,7 +53,7 @@ export default function Project({ elementRef }) {
                   <li className={styles.projectTextWrap}>
                     <div className={styles.projectText}>url</div>
                     <div className={styles.projectDetail}>
-                      <a href={data.url}>{data.url}</a>
+                      <a href={data.url} target='_blank' rel='noopener noreferrer'>{data.url}</a>
                     </div>
                   </li>
                   <li className={styles.projectTextWrap}>

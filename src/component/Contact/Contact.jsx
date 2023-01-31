@@ -17,7 +17,7 @@ export default function Contact({ elementRef }) {
                   alt="git"
                 />
               </div>
-              <a href='https://github.com/taehoon619/' className={styles.address}>github.com/taehoon619</a>
+              <a href='https://github.com/taehoon619/' className={styles.address} target='_blank' rel='noopener noreferrer'>github.com/taehoon619</a>
               <div className={styles.textTitle}>
                 <b>소스 코드 저장소</b>입니다.
               </div>
@@ -39,8 +39,8 @@ export default function Contact({ elementRef }) {
                   alt="notion"
                 />
               </div>
-              <a href='https://moored-fear-6c4.notion.site/0e78f9fc7c3b47ee8f4315249bcad766' className={styles.address}>
-              https://moored-fear-6c4.notion.site/0e78f9fc7c3b47ee8f4315249bcad766
+              <a href='https://moored-fear-6c4.notion.site/cc6d3171424f424694ad8b68cc216ab8' className={styles.address} target='_blank' rel='noopener noreferrer'>
+              https://moored-fear-6c4.notion.site/cc6d3171424f424694ad8b68cc216ab8
               </a>
               <div className={styles.textTitle}>
                 <b>이태훈의 Portfolio 노션</b>입니다.

@@ -31,7 +31,7 @@ export default function FullScreenDialog({ handleModal, project, num }) {
         <div className={styles.wrap}>
           <h1 className={styles.title}>{title}</h1>
           <h2 className={styles.UrlTitle}>🔗 Deplotment URL</h2>
-          <a href={url} className={styles.url}>
+          <a href={url} className={styles.url} target='_blank' rel='noopener noreferrer'>
             {url}
           </a>
           <h2 className={styles.detailTitle}>📌 Summary</h2>

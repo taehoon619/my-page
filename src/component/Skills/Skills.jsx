@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './Skills.module.css';
-import { MdDoneOutline } from 'react-icons/md';
 import { BsBootstrapFill, BsGithub, BsSlack } from 'react-icons/bs';
 import { SiTailwindcss, SiNotion, SiJquery, SiNetlify } from 'react-icons/si';
 import { IoLogoReact, IoLogoJavascript } from 'react-icons/io5';
@@ -60,28 +59,6 @@ export default function Skills({ elementRef }) {
             </h2>
             <p>
             TailwindCss를 통해서 빠르고 일관성있는 디자인 시스템을 적용합니다.           
-            </p>
-          </div>
-        </div>
-        <div className={styles.wrapper}>
-          <div className={styles.section}>
-            <h1 className={styles.intro}>BackEnd</h1>
-            <p className={styles.intro_text}>
-              간단한 웹 서버 구축 및 서버리스 서비스 경험이 있습니다.
-            </p>
-          </div>
-          <div className={styles.itemWrap}>
-            <h2 className={styles.itemTitle}>
-              <MdDoneOutline />
-              <span>JQuery</span>
-            </h2>
-            <p>
-            </p>
-            <h2 className={styles.itemTitle}>
-              <MdDoneOutline />
-              <span>JQuery</span>
-            </h2>
-            <p>
             </p>
           </div>
         </div>
