@@ -107,7 +107,7 @@ p {
   }
 
   .wrapper {
-    margin: 0 0 2.2rem;
+    margin: 0 0 2rem;
   }
 
   .section {
@@ -152,7 +152,8 @@ p {
   }
 
   .wrapper {
-    margin: 0 0 2.2rem;
+    padding: 2rem;
+    margin: 0 0 1rem;
   }
 
   .section {

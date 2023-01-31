@@ -57,11 +57,11 @@ export default function Contact({ elementRef }) {
             <div className={styles.hr} />
             <div className={styles.wrapper}>
               <ul className={styles.contactWrap}>
-                <div className={styles.textTitle}>
+                <div className={styles.contactTitle}>
                   <b>Contact</b>
                 </div>
-                <li className={styles.text}>010-0000-0000</li>
-                <li className={styles.text}>qwert@gamil.com</li>
+                <li className={styles.contactAddress}>010-5021-8665</li>
+                <li className={styles.contactAddress}>plok619@gamil.com</li>
               </ul>
             </div>
           </div>

@@ -40,7 +40,7 @@
 .text {
   background-color: #fff;
   padding: 4rem;
-  margin: 0 3rem 3rem;
+  margin: 0 2rem 3rem;
   border-radius: 1rem;
   box-shadow: 1rem 1rem 1rem 0 rgb(68 68 68 / 20%);
   -webkit-box-shadow: 1rem 1rem 1rem 0 rgb(68 68 68 / 20%);
@@ -63,10 +63,7 @@
     padding: 3.3rem 3rem;
   }
 
-  .text {
-    font-size: 7rem;
-  }
-
+  
   .intro {
     font-size: 1.7rem;
     margin-bottom: 1.3rem;
@@ -75,6 +72,10 @@
 
   .introText {
     font-size: 1rem;
+  }
+  
+  .text {
+    font-size: 7rem;
   }
 
   .title {
@@ -108,16 +109,18 @@
     font-weight: 300;
     line-height: 1.1rem;
   }
-
+  
+  .text {
+    padding: 2rem;
+    margin: 0 auto 2rem;
+  }
+  
   .title {
     font-size: 1.2rem;
     font-weight: 600;
     margin: 1.5rem 0;
   }
 
-  .text {
-    padding: 2rem;
-  }
 
   .text > p {
     font-size: 0.8rem;
