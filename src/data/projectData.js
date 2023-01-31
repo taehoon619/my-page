@@ -50,7 +50,7 @@ export const projectData = [
     backend: '',
     database: '',
     deployment: 'Netlify',
-    images: '/images/lth_portfolio.png',
+    images: '/images/leetaehoon_portfolio.png',
     readme: {
       title: 'My Portfolio',
       summary:
