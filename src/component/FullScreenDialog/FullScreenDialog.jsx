@@ -1,8 +1,8 @@
-import React from 'react';
-import styles from './FullScreenDialog.module.css';
-import { AiOutlineClose } from 'react-icons/ai';
-import { useEffect } from 'react';
-import Portal from '../../utills/Portal';
+import React from "react";
+import styles from "./FullScreenDialog.module.css";
+import { AiOutlineClose } from "react-icons/ai";
+import { useEffect } from "react";
+import Portal from "../../utills/Portal";
 
 export default function FullScreenDialog({ handleModal, project, num }) {
   const { title, summary, detail, background, meaning, techStack, url } =
@@ -15,8 +15,8 @@ export default function FullScreenDialog({ handleModal, project, num }) {
       width: 100%;`;
     return () => {
       const scrollY = document.body.style.top;
-      document.body.style.cssText = '';
-      window.scrollTo(0, parseInt(scrollY || '0', 10) * -1);
+      document.body.style.cssText = "";
+      window.scrollTo(0, parseInt(scrollY || "0", 10) * -1);
     };
   }, []);
   return (
@@ -31,7 +31,12 @@ export default function FullScreenDialog({ handleModal, project, num }) {
         <div className={styles.wrap}>
           <h1 className={styles.title}>{title}</h1>
           <h2 className={styles.UrlTitle}>🔗 Deplotment URL</h2>
-          <a href={url} className={styles.url} target='_blank' rel='noopener noreferrer'>
+          <a
+            href={url}
+            className={styles.url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             {url}
           </a>
           <h2 className={styles.detailTitle}>📌 Summary</h2>

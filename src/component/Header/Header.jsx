@@ -61,7 +61,6 @@ export default function Header({ goodsTabs }) {
           <ul className={styles.wrapButton}>
             {isDesktop ? (
               Array.from(goodsTabs).map((tab, index) => {
-                // console.log(tab);
                 return (
                   <li
                     className={styles.button}

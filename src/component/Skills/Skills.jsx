@@ -1,7 +1,13 @@
 import React from "react";
 import styles from "./Skills.module.css";
-import { BsBootstrapFill, BsGithub, BsSlack } from "react-icons/bs";
-import { SiTailwindcss, SiNotion, SiJquery, SiNetlify } from "react-icons/si";
+import { BsGithub, BsSlack } from "react-icons/bs";
+import {
+  SiHtml5,
+  SiCss3,
+  SiTailwindcss,
+  SiNotion,
+  SiNetlify,
+} from "react-icons/si";
 import { IoLogoReact, IoLogoJavascript } from "react-icons/io5";
 import Title from "../Title/Title";
 
@@ -10,7 +16,7 @@ export default function Skills({ elementRef }) {
     <article className={styles.container} ref={elementRef}>
       <Title font="Skills" lineColor="black" color="black" />
       <div className={styles.contentWrap}>
-        <div className={styles.wrapper}>
+        <section className={styles.wrapper}>
           <div className={styles.section}>
             <h1 className={styles.intro}>FrontEnd</h1>
             <p className={styles.intro_text}>
@@ -21,12 +27,22 @@ export default function Skills({ elementRef }) {
           </div>
           <div className={styles.itemWrap}>
             <h2 className={styles.itemTitle}>
-              <IoLogoReact />
-              <span>React</span>
+              <SiHtml5 />
+              <span>HTML</span>
             </h2>
             <p className={styles.text}>
-              생태계가 넓고, 다양한 라이브러리를 사용할 수 있는 React를 주로
-              사용합니다. <br /> 디자인 패턴 및 최적화에 관심이 많습니다.
+              웹 표준 및 웹 접근성을 준수하여 웹페이지를 제작할 수 있으며,
+              <br />
+              시멘틱 마크업을 준수하기 위해 생각하고 노력하고 있습니다.
+            </p>
+            <h2 className={styles.itemTitle}>
+              <SiCss3 />
+              <span>CSS</span>
+            </h2>
+            <p className={styles.text}>
+              CSS를 활용해 효과적으로 레이아웃 할 수 있으며 
+              <br/>
+              기본적인 디자인을 할 수 있습니다.
             </p>
             <h2 className={styles.itemTitle}>
               <IoLogoJavascript />
@@ -35,24 +51,14 @@ export default function Skills({ elementRef }) {
             <p className={styles.text}>
               ES6+ JavaScript 문법에 능숙하며, ECMAScript의 변화를 꾸준히 살피고
               학습합니다.
-              <br />
-              컴파일 단계에서 오류를 잡아주는 TypeScript 사용을 지향합니다.
             </p>
             <h2 className={styles.itemTitle}>
-              <SiJquery />
-              <span>JQuery</span>
+              <IoLogoReact />
+              <span>React</span>
             </h2>
             <p className={styles.text}>
-              제이쿼리를 이용하면 문서 객체 모델(DOM)과 이벤트에 관한 처리를
-              손쉽게 구현할 수 있습니다.
-            </p>
-            <h2 className={styles.itemTitle}>
-              <BsBootstrapFill />
-              <span>Bootstrap</span>
-            </h2>
-            <p className={styles.text}>
-              웹표준 및 웹접근성을 준수하여 웹페이지를 제작할 수 있으며, CSS를
-              활용한 애니메이션 구현을 할 수 있습니다.
+              생태계가 넓고, 다양한 라이브러리를 사용할 수 있는 React를 주로
+              사용합니다. <br /> 디자인 패턴 및 최적화에 관심이 많습니다.
             </p>
             <h2 className={styles.itemTitle}>
               <SiTailwindcss />
@@ -62,8 +68,8 @@ export default function Skills({ elementRef }) {
               TailwindCss를 통해서 빠르고 일관성있는 디자인 시스템을 적용합니다.
             </p>
           </div>
-        </div>
-        <div className={styles.wrapper}>
+        </section>
+        <section className={styles.wrapper}>
           <div className={styles.section}>
             <h1 className={styles.intro}>etc</h1>
             <p className={styles.intro_text}>
@@ -105,7 +111,7 @@ export default function Skills({ elementRef }) {
               익숙합니다.
             </p>
           </div>
-        </div>
+        </section>
       </div>
     </article>
   );
