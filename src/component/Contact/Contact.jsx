@@ -5,8 +5,8 @@ import styles from './Contact.module.css';
 export default function Contact({ elementRef }) {
   return (
     <article ref={elementRef} className={styles.container}>
-      <div className={styles.wrap}>
         <Title font="Contact" lineColor="#6c757d" color="#fff" />
+      <div className={styles.wrap}>
         <div className={styles.listWrap}>
           <div className={styles.itemWrap}>
             <div className={styles.wrapper}>

@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react';
-import styles from './Header.module.css';
-import { debounce } from 'lodash';
-import { RxHamburgerMenu } from 'react-icons/rx';
-import { FiArrowUp } from 'react-icons/fi';
-import { useMediaQuery } from 'react-responsive';
+import React, { useEffect, useState } from "react";
+import styles from "./Header.module.css";
+import { debounce } from "lodash";
+import { RxHamburgerMenu } from "react-icons/rx";
+import { FiArrowUp } from "react-icons/fi";
+import { useMediaQuery } from "react-responsive";
 
 export default function Header({ goodsTabs }) {
   const [scrollTop, setScrollTop] = useState(true);
@@ -15,7 +15,7 @@ export default function Header({ goodsTabs }) {
     const handleResize = debounce(() => {
       if (window.innerWidth < 1000) {
         setIsDesktop(false);
-    } else {
+      } else {
         setIsDesktop(true);
       }
     }, 200);
@@ -23,11 +23,11 @@ export default function Header({ goodsTabs }) {
       setIsDesktop(false);
     }
 
-    window.addEventListener('scroll', handleScroll);
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("resize", handleResize);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleResize);
     };
   }, [isTabletOrMobile]);
 
@@ -47,39 +47,41 @@ export default function Header({ goodsTabs }) {
     window.scrollTo({
       left: 0,
       top: 0,
-      behavior: 'smooth',
+      behavior: "smooth",
     });
   };
 
   return (
     <>
       <header className={styles.container}>
-        <ul className={styles.wrap}>
+        <div className={styles.wrap}>
           <span className={styles.logo} onClick={handleScrollTop}>
             Portfolio
           </span>
-          {isDesktop ? (
-            Array.from(goodsTabs).map((tab, index) => {
-              // console.log(tab);
-              return (
-                <li
-                  className={styles.button}
-                  onClick={tab.onMoveToElement}
-                  key={index}
-                >
-                  {tab.name}
-                </li>
-              );
-            })
-          ) : (
-            <div className={styles.hamburgerWrap}>
-              <RxHamburgerMenu
-                className={styles.hamburgerBtn}
-                onClick={handleHamburger}
-              />
-            </div>
-          )}
-        </ul>
+          <ul className={styles.wrapButton}>
+            {isDesktop ? (
+              Array.from(goodsTabs).map((tab, index) => {
+                // console.log(tab);
+                return (
+                  <li
+                    className={styles.button}
+                    onClick={tab.onMoveToElement}
+                    key={index}
+                  >
+                    {tab.name}
+                  </li>
+                );
+              })
+            ) : (
+              <div className={styles.hamburgerWrap}>
+                <RxHamburgerMenu
+                  className={styles.hamburgerBtn}
+                  onClick={handleHamburger}
+                />
+              </div>
+            )}
+          </ul>
+        </div>
         {!isDesktop && (
           <ul
             className={`${styles.menuListMobile} ${
@@ -107,7 +109,7 @@ export default function Header({ goodsTabs }) {
         className={`${styles.upBtn} ${scrollTop && styles.activeUpbtn}`}
         onClick={handleScrollTop}
       >
-        <FiArrowUp className={styles.arrowBtn}/>
+        <FiArrowUp className={styles.arrowBtn} />
       </div>
     </>
   );

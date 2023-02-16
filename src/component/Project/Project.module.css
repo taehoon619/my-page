@@ -1,8 +1,8 @@
 .container {
   font-family: var(--font-pretendard);
-  width: 100%;
   background-color: #f9c51d;
   padding: 3.3rem;
+  margin: 0 auto;
 }
 
 .itemWrap {
@@ -16,7 +16,7 @@
   border-radius: 1rem;
   box-shadow: 1rem 1rem 1rem 0 rgb(68 68 68 / 20%);
   -webkit-box-shadow: 1rem 1rem 1rem 0 rgb(68 68 68 / 20%);
-  background-color: white;
+  background-color: #fff;
 }
 
 .item {
@@ -47,20 +47,16 @@ img {
 }
 
 .text {
-  font-size: 1.5rem;
   border-bottom: 1px solid;
   padding-bottom: 0.8rem;
   margin: 0 1rem 0 0;
 }
 
 .textTitle {
-  font-size: 2rem;
   margin-bottom: 1rem;
 }
 
 .textDetail {
-  font-size: 1.2rem;
-  font-weight: 400;
   word-break: keep-all;
 }
 
@@ -113,15 +109,18 @@ img {
   }
 
   .itemWrap {
-    font-size: 1.2rem;
     margin: 2rem auto;
+    padding: 1rem 2rem;
   }
 
   .item {
     width: 100%;
     height: 100%;
-    margin: 0 1rem 1rem 1rem;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
+  }
+
+  .thumbnail {
+    padding: 0 1rem;
   }
 
   img {
@@ -131,7 +130,6 @@ img {
   }
 
   .textWrap {
-    width: 100%;
     display: flex;
     flex-direction: column;
     margin: 2rem;
@@ -139,17 +137,11 @@ img {
 
   .text {
     width: 100%;
-    font-size: 2rem;
     margin: 0 0 1rem 0;
   }
 
   .textTitle {
-    font-size: 1.3rem;
     font-weight: 900;
-  }
-
-  .textDetail {
-    font-size: 1rem;
   }
 
   .btn {
@@ -163,12 +155,12 @@ img {
   }
 
   .projectText {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 900;
   }
 
   .projectDetail {
-    font-size: 0.9rem;
+    font-size: 1.3rem;
     font-weight: 400;
     width: calc(100% - 6rem);
   }
@@ -186,8 +178,6 @@ img {
 
   .item {
     width: 77%;
-    /* height: 100%; */
-    margin: 0 1rem 1rem 1rem;
     flex-wrap: wrap;
   }
 
@@ -234,7 +224,6 @@ img {
   }
 
   .textWrap {
-    width: 100%;
     display: flex;
     flex-direction: column;
     margin: 1rem 0 0;
@@ -242,20 +231,16 @@ img {
 
   .text {
     width: 100%;
-    /* height: 40%; */
-    font-size: 2rem;
     margin: 0 0 2rem 0;
   }
 
   .textTitle {
-    font-size: 1.2rem;
     font-weight: 900;
+    margin-bottom: 0.5rem;
   }
 
   .textDetail {
-    font-size: 1rem;
-    font-weight: 300;
-    line-height: 1.2rem;
+    font-weight: 400;
   }
 
   .btn {

@@ -6,18 +6,18 @@
   --color-accent: #f16e03;
   --color-white: white;
   --color-scrollbar: #aaa7a7;
-  --font-pretendard: 'pretendard';
+  --font-pretendard: "pretendard";
 }
 
 @font-face {
-  font-family: 'pretendard';
+  font-family: "pretendard";
   src: url(./font/Pretendard-Regular.otf);
 }
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -30,7 +30,7 @@ body {
 }
 
 body::-webkit-scrollbar {
-  width: 4px;  /* 스크롤바의 너비 */
+  width: 4px; /* 스크롤바의 너비 */
 }
 
 body::-webkit-scrollbar-thumb {
@@ -40,11 +40,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 body::-webkit-scrollbar-track {
-  background: rgba(33, 122, 244, .1);  /*스크롤바 뒷 배경 색상*/
+  background: rgba(33, 122, 244, 0.1); /*스크롤바 뒷 배경 색상*/
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
@@ -53,4 +53,77 @@ code {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+h5 {
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 1.7rem;
+}
+
+@media (max-width: 996px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  h5 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.7rem;
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+  }
+
+  h5 {
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
 }

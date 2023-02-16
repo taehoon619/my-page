@@ -1,9 +1,9 @@
-import React from 'react';
-import styles from './Skills.module.css';
-import { BsBootstrapFill, BsGithub, BsSlack } from 'react-icons/bs';
-import { SiTailwindcss, SiNotion, SiJquery, SiNetlify } from 'react-icons/si';
-import { IoLogoReact, IoLogoJavascript } from 'react-icons/io5';
-import Title from '../Title/Title';
+import React from "react";
+import styles from "./Skills.module.css";
+import { BsBootstrapFill, BsGithub, BsSlack } from "react-icons/bs";
+import { SiTailwindcss, SiNotion, SiJquery, SiNetlify } from "react-icons/si";
+import { IoLogoReact, IoLogoJavascript } from "react-icons/io5";
+import Title from "../Title/Title";
 
 export default function Skills({ elementRef }) {
   return (
@@ -24,7 +24,7 @@ export default function Skills({ elementRef }) {
               <IoLogoReact />
               <span>React</span>
             </h2>
-            <p>
+            <p className={styles.text}>
               생태계가 넓고, 다양한 라이브러리를 사용할 수 있는 React를 주로
               사용합니다. <br /> 디자인 패턴 및 최적화에 관심이 많습니다.
             </p>
@@ -32,7 +32,7 @@ export default function Skills({ elementRef }) {
               <IoLogoJavascript />
               <span>Javascript</span>
             </h2>
-            <p>
+            <p className={styles.text}>
               ES6+ JavaScript 문법에 능숙하며, ECMAScript의 변화를 꾸준히 살피고
               학습합니다.
               <br />
@@ -42,14 +42,15 @@ export default function Skills({ elementRef }) {
               <SiJquery />
               <span>JQuery</span>
             </h2>
-            <p>
-            제이쿼리를 이용하면 문서 객체 모델(DOM)과 이벤트에 관한 처리를 손쉽게 구현할 수 있습니다.
+            <p className={styles.text}>
+              제이쿼리를 이용하면 문서 객체 모델(DOM)과 이벤트에 관한 처리를
+              손쉽게 구현할 수 있습니다.
             </p>
             <h2 className={styles.itemTitle}>
               <BsBootstrapFill />
               <span>Bootstrap</span>
             </h2>
-            <p>
+            <p className={styles.text}>
               웹표준 및 웹접근성을 준수하여 웹페이지를 제작할 수 있으며, CSS를
               활용한 애니메이션 구현을 할 수 있습니다.
             </p>
@@ -57,8 +58,8 @@ export default function Skills({ elementRef }) {
               <SiTailwindcss />
               <span>TailwindCss</span>
             </h2>
-            <p>
-            TailwindCss를 통해서 빠르고 일관성있는 디자인 시스템을 적용합니다.           
+            <p className={styles.text}>
+              TailwindCss를 통해서 빠르고 일관성있는 디자인 시스템을 적용합니다.
             </p>
           </div>
         </div>
@@ -74,7 +75,7 @@ export default function Skills({ elementRef }) {
               <BsGithub />
               <span>Git</span>
             </h2>
-            <p>
+            <p className={styles.text}>
               GIT을 활용한 워크 플로우에 익숙합니다. <br />
               Commit convention을 통한 협업 경험이 있고, Merge Conflict 처리에
               익숙합니다.
@@ -83,27 +84,28 @@ export default function Skills({ elementRef }) {
               <SiNetlify />
               <span>Netlify</span>
             </h2>
-            <p>
+            <p className={styles.text}>
               Netlify를 통해서 빌드, 배포, 호스팅 할 수 있습니다.
             </p>
             <h2 className={styles.itemTitle}>
               <SiNotion />
               <span>Notion</span>
             </h2>
-            <p>
-              Notion을 통해서 문서 작성, 작업 관리, 개인및 공동작업을 위한 페이지를 사용 할 수 있습니다.
+            <p className={styles.text}>
+              Notion을 통해서 문서 작성, 작업 관리, 개인및 공동작업을 위한
+              페이지를 사용 할 수 있습니다.
             </p>
             <h2 className={styles.itemTitle}>
               <BsSlack />
               <span>Slack</span>
             </h2>
-            <p>
+            <p className={styles.text}>
               GIT을 활용한 워크 플로우에 익숙합니다. <br />
               Commit convention을 통한 협업 경험이 있고, Merge Conflict 처리에
               익숙합니다.
             </p>
           </div>
-        </div> 
+        </div>
       </div>
     </article>
   );

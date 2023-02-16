@@ -1,6 +1,5 @@
-import { useRef } from 'react';
+import { useRef } from "react";
 
-//hook
 function useMoveScroll(name) {
   const element = useRef(null);
   const onMoveToElement = () => {
@@ -9,7 +8,7 @@ function useMoveScroll(name) {
     window.scrollTo({
       left: 0,
       top: scrollY,
-      behavior: 'smooth',
+      behavior: "smooth",
     });
   };
   return { element, onMoveToElement, name };

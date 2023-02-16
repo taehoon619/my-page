@@ -34,9 +34,14 @@
   color: #ed1c24;
 }
 
+.wrapButton {
+  display: flex;
+}
+
 .button {
   font-size: 1rem;
   font-weight: bold;
+  margin: 0 2rem;
   background-color: transparent;
   text-transform: capitalize;
   border: none;

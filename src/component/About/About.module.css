@@ -1,15 +1,14 @@
 .container {
   font-family: var(--font-pretendard);
-  width: 100%;
   background-color: #2d2d2d;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  padding: 3.3rem 13rem;
+  padding: 3.3rem;
 }
 
-.textWrap {
+.Wrap {
   max-width: 71.25rem;
   display: flex;
   flex-direction: column;
@@ -18,44 +17,33 @@
   word-break: keep-all;
 }
 
-.titleWrap {
+.introWrap {
   color: #fff;
   padding: 0 6rem;
-  margin: 0 0 3rem;
+  margin: 0 auto 3rem;
   text-align: center;
 }
 
-.intro {
-  font-size: 2rem;
+.introTitle {
   margin-bottom: 1.4rem;
   font-weight: 900;
 }
 
 .introText {
-  font-size: 1.2rem;
-  font-weight: 500;
-  line-height: 1.5rem;
+  font-weight: 400;
 }
 
-.text {
+.textWrap {
   background-color: #fff;
   padding: 4rem;
-  margin: 0 2rem 3rem;
+  margin: 0 0 3rem;
   border-radius: 1rem;
   box-shadow: 1rem 1rem 1rem 0 rgb(68 68 68 / 20%);
   -webkit-box-shadow: 1rem 1rem 1rem 0 rgb(68 68 68 / 20%);
 }
 
-.title {
-  font-size: 2rem;
-  font-weight: 600;
+.textTitle {
   margin: 1.7rem 0 1.5rem 0;
-}
-
-.text > p {
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.3rem;
 }
 
 @media (max-width: 996px) {
@@ -63,30 +51,18 @@
     padding: 3.3rem 3rem;
   }
 
-  
-  .intro {
-    font-size: 1.7rem;
+  .introTitle {
     margin-bottom: 1.3rem;
     font-weight: 800;
   }
 
-  .introText {
-    font-size: 1rem;
-  }
-  
-  .text {
-    font-size: 7rem;
+  .textWrap {
+    padding: 3rem;
   }
 
-  .title {
-    font-size: 1.2rem;
+  .textTitle {
     font-weight: 600;
     margin: 1.7rem 0 1.5rem 0;
-  }
-
-  .text > p {
-    font-size: 0.9rem;
-    font-weight: 200;
   }
 }
 
@@ -95,12 +71,12 @@
     padding: 3.3rem 1rem;
   }
 
-  .titleWrap {
+  .introWrap {
     padding: 0 3rem;
     margin: 0 0 1rem;
   }
 
-  .intro {
+  .introTitle {
     font-size: 1.3rem;
   }
 
@@ -109,22 +85,15 @@
     font-weight: 300;
     line-height: 1.1rem;
   }
-  
-  .text {
+
+  .textWrap {
     padding: 2rem;
     margin: 0 auto 2rem;
   }
-  
-  .title {
+
+  .textTitle {
     font-size: 1.2rem;
     font-weight: 600;
     margin: 1.5rem 0;
-  }
-
-
-  .text > p {
-    font-size: 0.8rem;
-    font-weight: 200;
-    line-height: 1.1rem;
   }
 }

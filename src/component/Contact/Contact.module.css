@@ -1,11 +1,11 @@
 .container {
-  background-color: rgb(45, 45, 45);
+  background-color: rgb(133, 122, 122);
+  padding: 3.3rem;
 }
 
 .wrap {
-  width: 100%;
+  /* width: 100%; */
   max-width: 71.25rem;
-  padding: 4rem 1rem;
   margin: 0 auto;
 }
 
@@ -57,7 +57,6 @@
 
 .nameImg {
   width: 10rem;
-  /* height: 3rem; */
   object-fit: cover;
 }
 
