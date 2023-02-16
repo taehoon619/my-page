@@ -9,7 +9,7 @@ import {
   SiNetlify,
 } from "react-icons/si";
 import { IoLogoReact, IoLogoJavascript } from "react-icons/io5";
-import Title from "../Title/Title";
+import Title from "../ui/Title/Title";
 
 export default function Skills({ elementRef }) {
   return (
@@ -40,8 +40,8 @@ export default function Skills({ elementRef }) {
               <span>CSS</span>
             </h2>
             <p className={styles.text}>
-              CSS를 활용해 효과적으로 레이아웃 할 수 있으며 
-              <br/>
+              CSS를 활용해 효과적으로 레이아웃 할 수 있으며
+              <br />
               기본적인 디자인을 할 수 있습니다.
             </p>
             <h2 className={styles.itemTitle}>

@@ -1,0 +1,52 @@
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 100;
+}
+
+.modalBox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60rem;
+  height: 40rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 auto;
+  padding: 2rem 5rem;
+  border-radius: 0.25rem;
+  background-color: rgb(233, 221, 221);
+  z-index: 999;
+  box-shadow: 0 2px 3px 0 rgba(34, 36, 38, 0.15);
+}
+
+.btnBox {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.contentWrap {
+  margin-top: 1rem;
+}
+
+.modalBtn {
+  font-size: 1rem;
+  background-color: black;
+  color: var(--color-white);
+  display: table;
+  border-radius: 0.25rem;
+  padding: 0.8rem 2rem;
+  cursor: pointer;
+}
+
+@media (max-width: 996px) {
+  .container {
+    width: 50rem;
+  }
+}

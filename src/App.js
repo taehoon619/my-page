@@ -10,9 +10,9 @@ import useMoveScroll from "./Hooks/useMoveScroll";
 function App() {
   const goodsTabs = {
     0: useMoveScroll("About"),
-    1: useMoveScroll("Contact"),
-    2: useMoveScroll("Skills"),
-    3: useMoveScroll("Project"),
+    1: useMoveScroll("Skills"),
+    2: useMoveScroll("Project"),
+    3: useMoveScroll("Contact"),
     length: 4,
   };
   return (
@@ -20,9 +20,9 @@ function App() {
       <Header goodsTabs={goodsTabs} />
       <Main />
       <About elementRef={goodsTabs[0].element} />
-      <Contact elementRef={goodsTabs[1].element} />
-      <Skills elementRef={goodsTabs[2].element} />
-      <Project elementRef={goodsTabs[3].element} />
+      <Skills elementRef={goodsTabs[1].element} />
+      <Project elementRef={goodsTabs[2].element} />
+      <Contact elementRef={goodsTabs[3].element} />
       <Footer />
     </div>
   );

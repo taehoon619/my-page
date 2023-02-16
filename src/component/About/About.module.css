@@ -6,6 +6,8 @@
   align-items: center;
   margin: 0 auto;
   padding: 3.3rem;
+  position: relative;
+  z-index: 1;
 }
 
 .Wrap {
@@ -44,6 +46,16 @@
 
 .textTitle {
   margin: 1.7rem 0 1.5rem 0;
+}
+
+.modalBtn {
+  font-size: 1rem;
+  background-color: black;
+  color: var(--color-white);
+  display: table;
+  border-radius: 0.25rem;
+  padding: 0.8rem 2rem;
+  cursor: pointer;
 }
 
 @media (max-width: 996px) {

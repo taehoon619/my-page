@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import styles from './Project.module.css';
-import Title from '../Title/Title';
-import { projectData } from '../../data/projectData';
-import FullScreenDialog from '../FullScreenDialog/FullScreenDialog';
+import React, { useState } from "react";
+import styles from "./Project.module.css";
+import Title from "../ui/Title/Title";
+import { projectData } from "../../data/projectData";
+import FullScreenDialog from "../FullScreenDialog/FullScreenDialog";
 
 export default function Project({ elementRef }) {
   const [modalOn, setModalOn] = useState(false);
@@ -38,7 +38,7 @@ export default function Project({ elementRef }) {
                   >
                     자세히 보기
                   </button>
-                </div> 
+                </div>
                 <ul>
                   <li className={styles.projectTextWrap}>
                     <div className={styles.projectText}>frontend</div>
@@ -53,7 +53,13 @@ export default function Project({ elementRef }) {
                   <li className={styles.projectTextWrap}>
                     <div className={styles.projectText}>url</div>
                     <div className={styles.projectDetail}>
-                      <a href={data.url} target='_blank' rel='noopener noreferrer'>{data.url}</a>
+                      <a
+                        href={data.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {data.url}
+                      </a>
                     </div>
                   </li>
                   <li className={styles.projectTextWrap}>
