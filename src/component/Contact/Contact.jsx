@@ -13,7 +13,11 @@ export default function Contact({ elementRef }) {
             href="https://www.github.com/taehoon619"
           >
             <div className={styles.nameWrap}>
-              <img className={styles.nameImg} src="/images/github.png" alt="" />
+              <img
+                className={styles.nameImg}
+                src="/images/github.png"
+                alt="github"
+              />
             </div>
             <div className={styles.address}>github.com/taehoon619</div>
             <div className={styles.textTitle}>
@@ -33,7 +37,11 @@ export default function Contact({ elementRef }) {
             href="https://moored-fear-6c4.notion.site/cc6d3171424f424694ad8b68cc216ab8"
           >
             <div className={styles.nameWrap}>
-              <img className={styles.nameImg} src="/images/notion.png" alt="" />
+              <img
+                className={styles.nameImg}
+                src="/images/notion.png"
+                alt="notion"
+              />
             </div>
             <div className={styles.address}>
               https://moored-fear-6c4.notion.site/

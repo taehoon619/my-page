@@ -44,8 +44,7 @@
 
 .nameImg {
   width: 10rem;
-  /* height: 3rem; */
-  object-fit: cover;
+  object-fit: fill;
 }
 
 .address {
