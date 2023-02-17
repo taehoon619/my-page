@@ -175,12 +175,11 @@ img {
   .itemWrap {
     font-size: 1.2rem;
     margin: 2rem auto;
-    padding: 1rem 2rem;
+    padding: 2rem;
   }
 
   .item {
-    width: 77%;
-    flex-wrap: wrap;
+    width: 100%;
   }
 
   .thumbnail {
@@ -212,16 +211,14 @@ img {
 
 @media (max-width: 576px) {
   .container {
-    padding: 3rem 1rem;
+    padding: 2rem;
   }
 
   .itemWrap {
     font-size: 1.2rem;
-    margin: 2rem auto;
   }
 
   .item {
-    margin: 0 auto;
     flex-wrap: wrap;
   }
 
