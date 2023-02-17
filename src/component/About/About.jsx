@@ -1,14 +1,13 @@
 import React, { useState } from "react";
-import Modal from "../Modal/Modal";
 import Title from "../ui/Title/Title";
+import Modal from "../Modal/Modal";
 import styles from "./About.module.css";
 
 export default function About({ elementRef }) {
-  const [modalOpen, setModalOpen] = useState("false");
+  const [modalOpen, setModalOpen] = useState(false);
   const modalClick = () => {
     setModalOpen(!modalOpen);
   };
-  console.log(modalOpen);
   return (
     <article className={styles.container} ref={elementRef}>
       <Title font="About Me" lineColor="gray" color="white" />
@@ -43,7 +42,7 @@ export default function About({ elementRef }) {
       <button className={styles.modalBtn} onClick={modalClick}>
         더보기
       </button>
-      {modalOpen && <Modal setModalOpen={setModalOpen} />}
+      {modalOpen && <Modal modalClick={modalClick} />}
     </article>
   );
 }
