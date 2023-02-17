@@ -45,7 +45,7 @@
 }
 
 .textTitle {
-  margin: 1.7rem 0 1.5rem 0;
+  margin: 1.5rem 0 1rem 0;
 }
 
 .modalBtn {
@@ -74,7 +74,6 @@
 
   .textTitle {
     font-weight: 600;
-    margin: 1.7rem 0 1.5rem 0;
   }
 }
 
@@ -85,7 +84,7 @@
 
   .introWrap {
     padding: 0 3rem;
-    margin: 0 0 1rem;
+    margin: 0 0 1.3rem;
   }
 
   .introTitle {
@@ -106,6 +105,6 @@
   .textTitle {
     font-size: 1.2rem;
     font-weight: 600;
-    margin: 1.5rem 0;
+    margin: 1rem 0;
   }
 }

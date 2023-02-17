@@ -30,16 +30,18 @@ export default function Contact({ elementRef }) {
           </a>
           <a
             className={styles.itemWrap}
-            href="https://grave-jute-6f6.notion.site/WOOK-s-Portfolio-a465e17624d141378fdc4b8effba7d78"
+            href="https://moored-fear-6c4.notion.site/cc6d3171424f424694ad8b68cc216ab8"
           >
             <div className={styles.nameWrap}>
               <img className={styles.nameImg} src="/images/notion.png" alt="" />
             </div>
             <div className={styles.address}>
-              https://grave-jute-6f6.notion.site/WOOK-s-Portfolio-a465e17624d141378fdc4b8effba7d78
+              https://moored-fear-6c4.notion.site/
+              <br />
+              cc6d3171424f424694ad8b68cc216ab8
             </div>
             <div className={styles.textTitle}>
-              <b>WOOK's Portfolio 노션</b>입니다.
+              <b>이태훈의 Portfolio 노션</b>입니다.
             </div>
             <ul className={styles.textWrap}>
               <li className={styles.text}>

@@ -7,11 +7,15 @@
   --color-white: white;
   --color-scrollbar: #aaa7a7;
   --font-pretendard: "pretendard";
+  --font-pretendard-black: "pretendard_black";
 }
 
 @font-face {
   font-family: "pretendard";
   src: url(./font/Pretendard-Regular.otf);
+
+  font-family: "pretendard_black";
+  src: url(./font/Pretendard-Black.otf);
 }
 
 body {
@@ -99,7 +103,7 @@ p {
 
   p {
     font-size: 1rem;
-    line-height: 1.7rem;
+    line-height: 1.3rem;
   }
 }
 
@@ -124,6 +128,6 @@ p {
 
   p {
     font-size: 0.8rem;
-    line-height: 1.2rem;
+    line-height: 1rem;
   }
 }
