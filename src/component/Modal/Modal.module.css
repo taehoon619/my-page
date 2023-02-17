@@ -11,9 +11,9 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
-  max-width: 1140px;
-  height: auto;
-  max-height: 90%;
+  max-width: 1000px;
+  /* height: auto; */
+  max-height: 80%;
   font-size: 1.5rem;
   font-weight: 600;
   margin: 0 auto;
@@ -47,7 +47,7 @@
 
 .text {
   background-color: rgb(238, 238, 238);
-  padding: 1rem;
+  padding: 1rem 1rem 2rem;
   border-radius: 0.5rem;
 }
 .btnBox {

@@ -37,7 +37,7 @@
 
 .textWrap {
   background-color: #fff;
-  padding: 4rem;
+  padding: 1rem 3rem 3rem;
   margin: 0 0 3rem;
   border-radius: 1rem;
   box-shadow: 1rem 1rem 1rem 0 rgb(68 68 68 / 20%);
@@ -50,7 +50,8 @@
 
 .modalBtn {
   font-size: 1rem;
-  background-color: black;
+  font-weight: 900;
+  background-color: gray;
   color: var(--color-white);
   display: table;
   border-radius: 0.25rem;

@@ -1,6 +1,6 @@
 .container {
   font-family: var(--font-pretendard);
-  background-color: #f9c51d;
+  background-color: rgb(238, 238, 238);
   padding: 3.3rem;
   margin: 0 auto;
 }
