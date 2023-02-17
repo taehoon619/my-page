@@ -70,11 +70,20 @@
 
 @media (max-width: 996px) {
   .modalBox {
+    width: 90%;
     height: 70%;
   }
 }
 
 @media (max-width: 769px) {
+  .modalBox {
+    padding: 1rem 1.5rem;
+    margin: 0 auto;
+  }
+
+  .btnBox {
+    margin: 1rem;
+  }
 }
 
 @media (max-width: 576px) {
