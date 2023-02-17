@@ -70,18 +70,18 @@
 
 @media (max-width: 996px) {
   .modalBox {
-    width: 50rem;
+    height: 70%;
   }
 }
 
 @media (max-width: 769px) {
-  .modalBox {
-    width: 35rem;
-  }
 }
 
 @media (max-width: 576px) {
-  .modalBox {
-    width: 30rem;
+  .modalBtn {
+    font-size: 1rem;
+    font-weight: 900;
+    border-radius: 0.5rem;
+    padding: 0.4rem 1rem;
   }
 }
