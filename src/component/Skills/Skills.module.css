@@ -30,6 +30,7 @@
 }
 
 .intro {
+  font-family: var(--font-pretendard-black);
   margin-bottom: 1.5rem;
 }
 

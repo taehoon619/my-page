@@ -53,6 +53,7 @@ img {
 }
 
 .textTitle {
+  font-family: var(--font-pretendard-black);
   margin-bottom: 1rem;
 }
 

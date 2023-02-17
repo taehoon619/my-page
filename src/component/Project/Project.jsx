@@ -21,7 +21,7 @@ export default function Project({ elementRef }) {
 
       {projectData.map((data) => {
         return (
-          <div className={styles.itemWrap} key={data.id}>
+          <section className={styles.itemWrap} key={data.id}>
             <div className={styles.item}>
               <div className={styles.thumbnail}>
                 <img src={data.images} alt="thumbnail" />
@@ -41,17 +41,17 @@ export default function Project({ elementRef }) {
                 </div>
                 <ul>
                   <li className={styles.projectTextWrap}>
-                    <div className={styles.projectText}>frontend</div>
+                    <div className={styles.projectText}>Frontend</div>
                     <div className={styles.projectDetail}>{data.frontend}</div>
                   </li>
                   <li className={styles.projectTextWrap}>
-                    <div className={styles.projectText}>github</div>
+                    <div className={styles.projectText}>Github</div>
                     <div className={styles.projectDetail}>
                       <a href={data.github}>{data.github}</a>
                     </div>
                   </li>
                   <li className={styles.projectTextWrap}>
-                    <div className={styles.projectText}>url</div>
+                    <div className={styles.projectText}>URL</div>
                     <div className={styles.projectDetail}>
                       <a
                         href={data.url}
@@ -63,7 +63,7 @@ export default function Project({ elementRef }) {
                     </div>
                   </li>
                   <li className={styles.projectTextWrap}>
-                    <div className={styles.projectText}>deployment</div>
+                    <div className={styles.projectText}>Deployment</div>
                     <div className={styles.projectDetail}>
                       {data.deployment}
                     </div>
@@ -71,7 +71,7 @@ export default function Project({ elementRef }) {
                 </ul>
               </div>
             </div>
-          </div>
+          </section>
         );
       })}
       {modalOn && (

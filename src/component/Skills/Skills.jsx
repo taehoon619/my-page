@@ -1,13 +1,7 @@
 import React from "react";
 import styles from "./Skills.module.css";
 import { BsGithub, BsSlack } from "react-icons/bs";
-import {
-  SiHtml5,
-  SiCss3,
-  SiTailwindcss,
-  SiNotion,
-  SiNetlify,
-} from "react-icons/si";
+import { SiHtml5, SiCss3, SiNotion, SiNetlify } from "react-icons/si";
 import { IoLogoReact, IoLogoJavascript } from "react-icons/io5";
 import Title from "../ui/Title/Title";
 
@@ -60,18 +54,11 @@ export default function Skills({ elementRef }) {
               생태계가 넓고, 다양한 라이브러리를 사용할 수 있는 React를 주로
               사용합니다. <br /> 디자인 패턴 및 최적화에 관심이 많습니다.
             </p>
-            <h2 className={styles.itemTitle}>
-              <SiTailwindcss />
-              <span>TailwindCss</span>
-            </h2>
-            <p className={styles.text}>
-              TailwindCss를 통해서 빠르고 일관성있는 디자인 시스템을 적용합니다.
-            </p>
           </div>
         </section>
         <section className={styles.wrapper}>
           <div className={styles.section}>
-            <h1 className={styles.intro}>etc</h1>
+            <h1 className={styles.intro}>Tools</h1>
             <p className={styles.intro_text}>
               간단한 웹 서버 구축 및 서버리스 서비스 경험이 있습니다.
             </p>

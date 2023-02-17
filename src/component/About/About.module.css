@@ -49,12 +49,12 @@
 }
 
 .modalBtn {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 900;
   background-color: gray;
   color: var(--color-white);
   display: table;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   padding: 0.8rem 2rem;
   cursor: pointer;
 }
