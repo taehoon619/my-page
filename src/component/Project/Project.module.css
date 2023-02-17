@@ -169,7 +169,7 @@ img {
 
 @media (max-width: 768px) {
   .container {
-    padding: 2rem 2rem;
+    padding: 3rem 2rem;
   }
 
   .itemWrap {
@@ -179,7 +179,7 @@ img {
   }
 
   .item {
-    width: 100%;
+    width: 100%; /* 백프로면 삭제가능 */
   }
 
   .thumbnail {
@@ -211,7 +211,7 @@ img {
 
 @media (max-width: 576px) {
   .container {
-    padding: 2rem;
+    padding: 3rem 1rem;
   }
 
   .itemWrap {
