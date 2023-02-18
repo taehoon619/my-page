@@ -1,7 +1,7 @@
 .container {
   font-family: var(--font-pretendard);
   width: 100%;
-  background-color: white;
+  background-color: var(--color-bg);
   box-shadow: 0 1px 0.3rem hsl(0deg 0% 80% / 80%);
   color: black;
   opacity: 1;
@@ -25,13 +25,14 @@
 .logo {
   font-weight: 900;
   font-size: 2rem;
-  color: #000;
+  color: var(--color-accent);
   line-height: 2rem;
   cursor: pointer;
+  transition: all 0.3;
 }
 
 .logo:hover {
-  color: #ed1c24;
+  transform: scale(1.1, 1.1);
 }
 
 .wrapButton {
@@ -49,7 +50,7 @@
 }
 
 .button:hover {
-  color: #ed1c24;
+  color: var(--color-accent);
 }
 
 .upBtn {
@@ -122,7 +123,7 @@
 }
 
 .menuMobile:hover {
-  color: #ed1c24;
+  color: var(--color-accent);
 }
 
 .menuMobile:first-child {

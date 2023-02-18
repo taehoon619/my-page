@@ -24,7 +24,11 @@ export default function Project({ elementRef }) {
           <section className={styles.itemWrap} key={data.id}>
             <div className={styles.item}>
               <div className={styles.thumbnail}>
-                <img src={data.images} alt="thumbnail" />
+                <img
+                  className={styles.projectImg}
+                  src={data.images}
+                  alt="thumbnail"
+                />
               </div>
               <div className={styles.textWrap}>
                 <div className={styles.text}>

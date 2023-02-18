@@ -1,9 +1,9 @@
-import React from 'react';
-import styles from './Main.module.css';
-import { useState, useEffect } from 'react';
+import React from "react";
+import styles from "./Main.module.css";
+import { useState, useEffect } from "react";
 
 export default function Main() {
-  const [title, setTitle] = useState('');
+  const [title, setTitle] = useState("");
   const [count, setCount] = useState(0);
   const completionWord = `Developer \n 이태훈입니다`;
 
@@ -20,7 +20,7 @@ export default function Main() {
           return result;
         });
       }
-    }, 200);
+    }, 100);
 
     return () => {
       clearInterval(typingInterval);
@@ -30,7 +30,7 @@ export default function Main() {
   return (
     <article className={styles.container}>
       <div className={styles.text}>
-        <h2>{title}</h2>
+        <h1 className={styles.title}>{title}</h1>
       </div>
     </article>
   );

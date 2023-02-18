@@ -19,7 +19,6 @@ export default function Modal({ modalClick }) {
     <section className={styles.container}>
       <div className={styles.modalBox}>
         <div className={styles.contentWrap}>
-          <h3 className={styles.qna}>Q n A</h3>
           <ul className={styles.textWrap}>
             <li className={styles.textBox}>
               <h2 className={styles.title}>Q1. 자기소개</h2>

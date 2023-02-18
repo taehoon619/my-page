@@ -1,30 +1,28 @@
 .container {
-  font-family: var(--font-pretendard);
   width: 100%;
   height: 100vh;
-  background-color: var(--color-bg-dark);
+  font-family: var(--font-pretendard);
+  background-color: var(--color-bg);
   overflow: auto;
 }
 
 .text {
   width: 100%;
   height: 100%;
-  font-size: 9rem;
-  font-weight: bold;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
   white-space: pre-line;
 }
 
-.text > h2 {
-  font-size: 7rem;
+.title {
+  font-size: 8rem;
   font-weight: bold;
   text-align: center;
+  color: var(--color-accent);
 }
 
-.text > h2::after {
+.title::after {
   content: "";
   margin-left: 0.6rem;
   border-right: 3px solid rgb(239, 239, 239);
@@ -41,19 +39,19 @@
 }
 
 @media (max-width: 996px) {
-  .text > h2 {
+  .title {
     font-size: 7rem;
   }
 }
 
 @media (max-width: 768px) {
-  .text > h2 {
+  .title {
     font-size: 5rem;
   }
 }
 
 @media (max-width: 576px) {
-  .text > h2 {
+  .title {
     font-size: 3rem;
   }
 }
