@@ -1,7 +1,7 @@
 .container {
   font-family: var(--font-pretendart-ExtraBold);
   position: relative;
-  margin: 3rem auto 3rem;
+  margin: 3rem auto 5rem;
   /* width: fit-content; */
 }
 
@@ -14,7 +14,7 @@
 
 @media (max-width: 996px) {
   .container {
-    margin: 0 auto 2.3rem;
+    margin: 2rem auto 5rem;
   }
   .text {
     font-weight: 700;
@@ -25,7 +25,7 @@
 
 @media (max-width: 768px) {
   .container {
-    margin: 0 auto 2rem;
+    margin: 2rem auto 3rem;
   }
   .text {
     font-size: 2.2rem;
@@ -36,7 +36,7 @@
 
 @media (max-width: 576px) {
   .container {
-    margin: 0 auto 1.5rem;
+    margin: 2rem auto;
   }
   .text {
     font-weight: 700;

@@ -6,7 +6,9 @@ export default function Contact({ elementRef }) {
   return (
     <article ref={elementRef} className={styles.container}>
       <div className={styles.wrap}>
-        <Title font="Contact" lineColor="#6c757d" color="#fff" />
+        <dv className={styles.titleBox}>
+          <Title font="CONTACT" lineColor="#6c757d" color="#fff" />
+        </dv>
         <div className={styles.listWrap}>
           <a
             className={styles.itemWrap}

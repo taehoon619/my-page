@@ -3,7 +3,7 @@ import Title from "../ui/Title/Title";
 import Modal from "../Modal/Modal";
 import styles from "./About.module.css";
 
-export default function About({ elementRef, animatedItem }) {
+export default function About({ elementRef }) {
   const [modalOpen, setModalOpen] = useState(false);
 
   const modalClick = () => {

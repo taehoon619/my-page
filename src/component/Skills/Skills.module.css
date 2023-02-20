@@ -1,11 +1,8 @@
 .container {
   font-family: var(--font-pretendard);
   background-color: var(--color-accent);
-  /* display: flex;
-  flex-direction: column;
-  align-items: center; */
   margin: 0 auto;
-  padding: 6rem 3.3rem 3.3rem;
+  padding: 5rem 3.3rem 9rem;
 }
 
 .titleBox {
@@ -13,13 +10,9 @@
   padding-left: 8.3rem;
 }
 
-.contentWrap {
-  /* max-width: 71.25rem; */
-}
-
 .wrapper {
   background-color: var(--color-bg);
-  /* border-radius: 1rem; */
+  border-radius: 1rem;
   padding: 5rem;
   margin: 0 0 5rem;
   box-shadow: 1rem 1rem 1rem 0 rgb(68 68 68 / 20%);
@@ -30,9 +23,6 @@
   margin-bottom: 5rem;
 }
 .introWrap {
-  text-align: start;
-  display: flex;
-  flex-direction: column;
   margin-bottom: 2.5rem;
   padding-left: 3.5rem;
 }
@@ -41,20 +31,20 @@
   font-weight: 900;
   font-family: var(--font-pretendard-black);
   color: var(--color-accent);
-  margin-bottom: 1.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .itemWrap {
   padding-left: 3.5rem;
-  flex-wrap: wrap;
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
+  flex-flow: row wrap;
 }
 
 .itemList {
-  padding-left: 3.5rem;
+  width: 33.33%;
   margin-right: 5rem;
-  border-left: 2px solid gray;
+  display: table-cell;
 }
 
 .itemTitle {
@@ -71,7 +61,16 @@
 
 @media (max-width: 996px) {
   .container {
-    padding: 3rem 3rem;
+    padding: 6rem 3rem;
+  }
+
+  .titleBox {
+    padding-left: 6.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .wrapper {
+    padding: 3rem;
   }
 
   .section {
@@ -83,13 +82,8 @@
   }
 
   .itemWrap {
-    padding-left: 3rem;
     margin: 0;
     flex-wrap: wrap;
-  }
-
-  .itemList {
-    padding-left: 2.5rem;
   }
 
   .itemTitle {
@@ -103,7 +97,12 @@
 
 @media (max-width: 768px) {
   .container {
-    padding: 3rem 2rem;
+    padding: 4rem 2rem 7rem;
+  }
+
+  .titleBox {
+    padding-left: 4rem;
+    margin-bottom: 3rem;
   }
 
   .wrapper {
@@ -112,6 +111,12 @@
 
   .section {
     padding-top: 1rem;
+    margin-bottom: 3.5rem;
+  }
+
+  .introWrap {
+    margin-bottom: 2.5rem;
+    padding-left: 1rem;
   }
 
   .intro_text {
@@ -120,9 +125,14 @@
   }
 
   .itemWrap {
-    padding-left: 2rem;
+    padding-left: 1rem;
     flex-wrap: wrap;
-    border-left: 1px solid gray;
+  }
+
+  .itemList {
+    width: 100%;
+    margin-right: 0;
+    display: table-cell;
   }
 
   .itemTitle {
@@ -137,7 +147,12 @@
 
 @media (max-width: 576px) {
   .container {
-    padding: 3rem 1rem;
+    padding: 4rem 1rem 7rem;
+  }
+
+  .titleBox {
+    padding-left: 3rem;
+    margin-bottom: 3rem;
   }
 
   .wrapper {
@@ -147,6 +162,7 @@
 
   .section {
     padding-top: 1rem;
+    margin-bottom: 2rem;
   }
 
   .intro {
@@ -159,9 +175,7 @@
   }
 
   .itemWrap {
-    padding-left: 2rem;
-    flex-wrap: wrap;
-    border-left: 1px solid gray;
+    padding-left: 1rem;
   }
 
   .itemTitle span {

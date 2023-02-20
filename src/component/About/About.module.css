@@ -13,18 +13,7 @@
 .imgWrap {
   width: 30%;
   object-fit: fill;
-  /* background-color: var(--color-accent); */
   margin-bottom: 2rem;
-  animation: 0.9s ease-in-out fadeEffect;
-}
-
-@keyframes fadeEffect {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 .imgBox {
@@ -106,17 +95,19 @@
 }
 
 @media (max-width: 996px) {
-  .container {
-    padding: 3.3rem 3rem;
-  }
-
   .introTitle {
     margin-bottom: 1.3rem;
     font-weight: 800;
   }
 
+  .textContainer {
+    width: 100%;
+    margin-top: 8rem;
+    padding: 6rem 0 6rem;
+  }
+
   .textWrap {
-    padding: 1rem 2rem;
+    padding: 1rem 6rem;
   }
 
   .textTitle {
@@ -125,10 +116,6 @@
 }
 
 @media (max-width: 576px) {
-  .container {
-    padding: 3.3rem 1rem;
-  }
-
   .introWrap {
     padding: 0 3rem;
     margin: 0 0 1.3rem;
@@ -139,12 +126,20 @@
   }
 
   .textWrap {
-    padding: 1.5rem;
-    margin: 0 auto 2rem;
+    padding: 0 3rem;
+    margin: 1rem auto 2rem;
   }
 
   .textTitle {
     font-weight: 600;
     margin: 0 0 1rem;
+  }
+
+  .modalBtn {
+    font-size: 0.8rem;
+    font-weight: 800;
+    border-radius: 0.5rem;
+    padding: 0.8rem 1.3rem;
+    margin-top: 1rem;
   }
 }

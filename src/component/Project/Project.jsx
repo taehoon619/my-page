@@ -17,7 +17,7 @@ export default function Project({ elementRef }) {
 
   return (
     <article ref={elementRef} className={styles.container}>
-      <Title font="Project" lineColor="#000" color="#000" />
+      <div className={styles.titleBox}><Title font="Project" lineColor="#000" color="#000" /></div>
 
       {projectData.map((data) => {
         return (

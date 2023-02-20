@@ -5,8 +5,12 @@
 .wrap {
   width: 100%;
   max-width: 71.25rem;
-  padding: 3.3rem;
+  padding: 6rem 3.3rem 9rem;
   margin: 0 auto;
+}
+
+.titleBox {
+  text-align: center;
 }
 
 .listWrap {
@@ -14,6 +18,7 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-top: 6rem;
 }
 
 .itemWrap {
@@ -87,7 +92,11 @@
 
 @media (max-width: 576px) {
   .wrap {
-    padding: 3rem 1rem;
+    padding: 3rem 1rem 6rem;
+  }
+
+  .listWrap {
+    margin-top: 4rem;
   }
 
   .itemWrap {
