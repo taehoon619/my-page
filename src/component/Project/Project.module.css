@@ -62,6 +62,7 @@ img {
 }
 
 .textDetail {
+  font-weight: 400;
   word-break: keep-all;
 }
 

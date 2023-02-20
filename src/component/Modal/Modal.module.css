@@ -64,6 +64,7 @@
   background-color: var(--color-accent);
   color: var(--color-white);
   display: table;
+  border: none;
   border-radius: 0.5rem;
   padding: 0.8rem 2rem;
   cursor: pointer;

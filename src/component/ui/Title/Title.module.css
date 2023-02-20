@@ -1,12 +1,12 @@
 .container {
+  /* width: 100%; */
   font-family: var(--font-pretendart-ExtraBold);
   position: relative;
   margin: 3rem auto 5rem;
-  /* width: fit-content; */
 }
 
 .text {
-  border-bottom-width: 1px;
+  /* border-bottom-width: 1px; */
   /* border-bottom-style: solid; */
   font-size: 4rem;
   line-height: 1.5;
