@@ -7,7 +7,7 @@
 
 .titleBox {
   text-align: left;
-  padding-left: 8.3rem;
+  padding-left: 7.3rem;
 }
 
 .wrapper {
@@ -24,7 +24,7 @@
 }
 .introWrap {
   margin-bottom: 2.5rem;
-  padding-left: 3.5rem;
+  padding-left: 2.5rem;
 }
 
 .intro {
@@ -35,7 +35,7 @@
 }
 
 .itemWrap {
-  padding-left: 3.5rem;
+  padding-left: 2.5rem;
   display: flex;
   justify-content: space-between;
   flex-flow: row wrap;
