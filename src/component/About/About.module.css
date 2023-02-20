@@ -81,14 +81,19 @@
 .modalBtn {
   font-size: 1.2rem;
   font-weight: 900;
-  background-color: var(--color-accent);
   color: var(--color-white);
-  display: table;
+  background-color: var(--color-accent);
+  border: none;
   border-radius: 0.5rem;
   padding: 0.8rem 2rem;
   margin-top: 1.5rem;
   cursor: pointer;
-  border: none;
+  box-shadow: 1rem 1rem 1rem 0 rgba(68, 68, 68, 0.2);
+  -webkit-box-shadow: 1rem 1rem 1rem 0 rgb(68 68 68 / 20%);
+}
+
+.modalBtn:hover {
+  opacity: 0.6;
 }
 
 .accent {

@@ -1,6 +1,5 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./Main.module.css";
-import { useState, useEffect } from "react";
 
 export default function Main() {
   const [title, setTitle] = useState("");
