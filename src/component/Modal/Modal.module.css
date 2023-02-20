@@ -74,6 +74,10 @@
     width: 90%;
     height: 70%;
   }
+
+  .text {
+    padding: 3rem 2rem;
+  }
 }
 
 @media (max-width: 769px) {
@@ -82,12 +86,20 @@
     margin: 0 auto;
   }
 
+  .text {
+    padding: 2rem 2rem;
+  }
+
   .btnBox {
     margin: 1rem;
   }
 }
 
 @media (max-width: 576px) {
+  .text {
+    padding: 2rem 2rem;
+  }
+
   .modalBtn {
     font-size: 1rem;
     font-weight: 900;
