@@ -23,7 +23,7 @@
 }
 
 .footer_iconWrap:hover {
-  transform: scale(1.1, 1.1);
+  transform: scale(1.1);
 }
 
 .footer_iconWrap > img {
